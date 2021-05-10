@@ -1,8 +1,23 @@
 body{
-    background-color: lightgrey;
+    background-color: #ffdac4;
 }
-ul#menu li{
-    display: inline-grid;
+.navbar{/*modifichiamo lo stile della navbar*/
+    text-align: center;
+}
+.navbar a{/*modifichiamo lo stile degli elementi della navbar*/
+    text-align: center;
+    text-decoration: none;
+    font-family: cursive;
+    font-size: 20px;
+    color: #8ea4ff;
+}
+.navbar a:hover{/*impostiamo lo stile di quado passo col mouse su un elemento*/
+    background-color: snow;
+    color: black;
+}
+.navbar a.active{/*impostiamo uno stile per una pagina attiva cioè dove stoo io al momento*/
+    color: black ;
+
 }
 .titolo{
    text-align: center;
