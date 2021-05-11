@@ -1,0 +1,16 @@
+.titolo {
+    text-align: center;
+    font-size: xx-large; /*imposta una grandezza del font*/
+    /*font-palette: light;*/
+    font-family: cursive;
+    color: orange;
+    background: linear-gradient(to right, gold 30%, darkblue 70%, black 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    -webkit-text-stroke: 3px black; /*imposta un bordo del testo*/
+}
+body{
+    background-color: lightgrey;
+}

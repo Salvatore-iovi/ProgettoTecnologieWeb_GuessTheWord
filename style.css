@@ -1,5 +1,5 @@
-body{
-    background-color: #ffdac4;
+body {
+    background-color: lightgrey;
 }
 .navbar{/*modifichiamo lo stile della navbar*/
     text-align: center;
@@ -11,18 +11,17 @@ body{
     font-size: 20px;
     color: #8ea4ff;
 }
-.navbar a:hover{/*impostiamo lo stile di quado passo col mouse su un elemento*/
+.navbar a:hover{/*impostiamo lo stile di quando passo col mouse su un elemento*/
     background-color: snow;
     color: black;
 }
 .navbar a.active{/*impostiamo uno stile per una pagina attiva cioè dove stoo io al momento*/
     color: black ;
-
 }
 .titolo{
    text-align: center;
    font-size: xxx-large;/*imposta una grandezza del font*/
-    font-palette: light;
+    /*font-palette: light;*/
     font-family: cursive;
     color: orange;
     background: linear-gradient(to right, gold 30%, darkblue 70%, black 100%);
@@ -32,11 +31,7 @@ body{
     text-fill-color: transparent;
    -webkit-text-stroke: 3px black;/*imposta un bordo del testo*/
 }
-.descrizione{
-    text-align: center;
-    font-family: cursive;
-    font-palette: dark;
-}
+
 
 
 
