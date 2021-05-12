@@ -1,5 +1,7 @@
 function mostraMessaggio()
 {
-window.alert("Stai per ritornare alla home...Alla prossima!");
-window.history.back()
+    var messaggio=confirm("Vuoi davvero ritornare alla home? Tutti i progressi saranno persi")
+    if(messaggio==true){
+        window.history.back()
+    }
 }
