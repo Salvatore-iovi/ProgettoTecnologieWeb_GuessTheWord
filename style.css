@@ -1,5 +1,5 @@
 body {
-    background-color: lightgrey;
+    background-color: snow;
 }
 .navbar{/*modifichiamo lo stile della navbar*/
     text-align: center;
@@ -23,15 +23,19 @@ body {
    font-size: xxx-large;/*imposta una grandezza del font*/
     /*font-palette: light;*/
     font-family: cursive;
-    color: orange;
-    background: linear-gradient(to right, gold 30%, darkblue 70%, black 100%);
+    background: linear-gradient(to right,red 20%,#39ff14 50%,blue 100%);
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
    -webkit-text-stroke: 3px black;/*imposta un bordo del testo*/
 }
-
-
+.descrizione{
+    font-family: cursive;
+    font-size: large;
+    margin: 20px auto;
+    height: 120px;
+    width: 400px;
+}
 
 
