@@ -1,7 +1,7 @@
 function mostraMessaggio()
 {
-    var messaggio=confirm("Vuoi davvero ritornare alla home? Tutti i progressi saranno persi")
+    messaggio=confirm("vuoi davvero tornare alla home tutti i progressi andranno persi")
     if(messaggio==true){
-        window.history.back()
+        window.history.go(-1)
     }
 }
