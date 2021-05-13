@@ -1,22 +1,56 @@
+html,
 body {
-    background-color: snow;
+    height: 100%;
+   /* background-color: snow;*/
+}
+body {
+    background-color: #d7d7d7;
+}
+#center {
+
+    font-family: cursive;
+    font-size: 18px;
+    background: white;
+    margin: 10px auto;
+    width: 750px;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 10px  10px 5px darkgrey,
+    -10px -10px 5px darkgrey,
+    10px -10px 5px darkgrey,
+    -10px  10px 5px darkgrey;
 }
 .navbar{/*modifichiamo lo stile della navbar*/
+    background-color: #4f4f4f;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 5px  5px 1px darkgrey;
+    overflow: hidden;
     text-align: center;
 }
-.navbar a{/*modifichiamo lo stile degli elementi della navbar*/
-    text-align: center;
+.image{
+    position: absolute;
+    top: 7px;
+}
+.navbar a, span{/*modifichiamo lo stile degli elementi della navbar*/
+
     text-decoration: none;
     font-family: cursive;
-    font-size: 20px;
-    color: #8ea4ff;
+    float: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    font-size: 17px;
 }
 .navbar a:hover{/*impostiamo lo stile di quando passo col mouse su un elemento*/
-    background-color: snow;
-    color: black;
+    background-color: black;
+    color: white;
 }
 .navbar a.active{/*impostiamo uno stile per una pagina attiva cioè dove stoo io al momento*/
-    color: black ;
+    background-color: #04AA6D;
+    color: white;
 }
 .titolo{
    text-align: center;
