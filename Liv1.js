@@ -6,5 +6,5 @@ function mostraMessaggio()
     }
 }
 function suggerimenti() {
-    confirm("Qui ci sono i suggerimenti")
+    alert("Qui ci sono i suggerimenti")
 }

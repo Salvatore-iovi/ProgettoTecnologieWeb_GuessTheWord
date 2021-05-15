@@ -53,3 +53,35 @@ body{
     background-position: center center;
     margin-left: -30px;
 }
+.Home{
+    text-align: center;
+}
+.Home input{
+    text-align: center;
+    font-family: cursive;
+    font-size: medium;
+    border-radius: 8px;
+}
+.Home img{
+    -webkit-transform: rotate(180deg);
+    width: 30pt;
+    height: 30pt;
+}
+.Suggerimenti img{
+    height: 50px;
+    width: 50px;
+    margin-left: 740px ;
+
+}
+.Suggerimenti input{
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+    border-radius: 8px;
+    height: 40px;
+    width: 100px;
+    border-color: lightgrey;
+    mso-border-shadow: yes;
+    margin-left: 715px ;
+}
+
