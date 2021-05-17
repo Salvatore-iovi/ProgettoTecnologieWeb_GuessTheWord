@@ -8,9 +8,16 @@ function mostraMessaggio()
 function suggerimenti() {
     alert("Qui ci sono i suggerimenti")
 }
-function controlloRisposta()
+function controlloRisposta(risposta_utente)
 {
-    //DA VEDERE
-    var risposta="cane";
-
+    let risposta_esatta="cane"
+    let display=document.getElementById("risposta_utente")
+    var displayValue=display.innerText
+    if(displayValue==risposta_esatta)
+    {
+        alert("Risposta esatta")
+    }else{
+        alert("Risposta errata...Riprova")
+    }
 }
+

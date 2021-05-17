@@ -1,5 +1,5 @@
 body {
-    background-color: #ffa045;
+    background-color: #b8a185;
 }
 #center {
 
@@ -111,6 +111,7 @@ body {
     border-color: lightgrey;
     mso-border-shadow: yes;
     cursor: pointer;
+    box-shadow: 5px  5px 1px black;
 }
 .start p{
     text-align: center;

@@ -1,5 +1,5 @@
 body{
-    background-color: #ffa045;
+    background-color: #b8a185;
 }
 .titolo {
     text-align: center;
@@ -67,6 +67,7 @@ body{
     margin-left: 1400px;
     border-color: lightgrey;
     cursor:pointer;
+    box-shadow: 5px  5px 1px black;
 }
 .Home img{
     -webkit-transform: rotate(180deg);
@@ -91,6 +92,7 @@ body{
     mso-border-shadow: yes;
     margin-left: 1415px ;
     cursor:pointer;
+    box-shadow: 5px  5px 1px black;
 }
 .text-area input{
     text-align: center;
@@ -102,6 +104,7 @@ body{
     display: block;
     border-color: lightgrey;
     cursor: text;
+    box-shadow: 5px  5px 1px black;
 
 }
 .invio input{
@@ -114,4 +117,5 @@ body{
     margin-left: 10px;
     border-color: lightgrey;
     cursor: pointer;
+    box-shadow: 5px  5px 1px black;
 }
