@@ -8,3 +8,9 @@ function mostraMessaggio()
 function suggerimenti() {
     alert("Qui ci sono i suggerimenti")
 }
+function controlloRisposta()
+{
+    //DA VEDERE
+    var risposta="cane";
+
+}

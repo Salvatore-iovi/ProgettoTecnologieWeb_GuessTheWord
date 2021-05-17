@@ -1,5 +1,5 @@
 body{
-    background-color: lightgrey;
+    background-color: #ffa045;
 }
 .titolo {
     text-align: center;
@@ -34,6 +34,9 @@ body{
     padding: 14px 16px;
     font-size: 17px;
 }
+.navbar img{
+    margin-left: -50px
+}
 .navbar a:hover{/*impostiamo lo stile di quando passo col mouse su un elemento*/
     background-color: white ;
     color:black;
@@ -42,13 +45,13 @@ body{
     height: 20px;
 }
 .navbar a.active{/*impostiamo uno stile per una pagina attiva cioè dove stoo io al momento*/
-    background-color: #04AA6D;
+    background-color: lightgrey;
     color: white;
 }
 .button{
     width: 10px ;
     height: 10px;
-    background-image: url("image/suggerimenti.png");
+    background-image: url("../image/suggerimenti.png");
     background-repeat: no-repeat;
     background-position: center center;
     margin-left: -30px;
@@ -61,27 +64,54 @@ body{
     font-family: cursive;
     font-size: medium;
     border-radius: 8px;
+    margin-left: 1400px;
+    border-color: lightgrey;
+    cursor:pointer;
 }
 .Home img{
     -webkit-transform: rotate(180deg);
     width: 30pt;
     height: 30pt;
+    margin-left: 1400px;
 }
 .Suggerimenti img{
     height: 50px;
     width: 50px;
-    margin-left: 740px ;
+    margin-left: 1440px ;
 
 }
 .Suggerimenti input{
     text-align: center;
     font-family: cursive;
-    font-size: small;
+    font-size: smaller;
     border-radius: 8px;
     height: 40px;
     width: 100px;
     border-color: lightgrey;
     mso-border-shadow: yes;
-    margin-left: 715px ;
+    margin-left: 1415px ;
+    cursor:pointer;
 }
+.text-area input{
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+    border-radius: 8px;
+    margin-left: 590px;
+    float: left;
+    display: block;
+    border-color: lightgrey;
+    cursor: text;
 
+}
+.invio input{
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+    border-radius: 8px;
+    float: left;
+    display: block;
+    margin-left: 10px;
+    border-color: lightgrey;
+    cursor: pointer;
+}

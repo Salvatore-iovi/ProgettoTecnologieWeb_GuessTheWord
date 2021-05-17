@@ -8,7 +8,7 @@
 <body>
 <!--NAVBAR!-->
 <div class="navbar">
-    <img class="image" width="60px" height="60px" src="image/logo-navbar.png" style="margin-left: -50px">
+    <img class="image" width="60px" height="60px" src="../image/logo.png">
     <a href="#Home">Home</a>
     <a href="#Home">Home</a>
 </div>
@@ -21,7 +21,7 @@
 
 </div>
 <div class="Home">
-    <img src="image/freccia-start.png">
+    <img src="../image/freccia-start.png">
     <p>
         <input type="button" value="Home" onclick="mostraMessaggio()">
     </p>
@@ -29,11 +29,18 @@
 
     <!--TASTO SUGGERIMENTI!-->
     <div class="Suggerimenti">
-        <img src="image/suggerimenti.png">
+        <img src="../image/suggerimenti.png">
     <p>
         <input type="button" value="Suggerimenti" onclick="suggerimenti()">
     </p>
 </div>
-
+<!--FORM PER INSERIRE IL TESTO!-->
+<div class="text-area">
+        <input type="text" size="30" maxlength="30">
+<div class="invio">
+    <!--BOTTONE PER INVIARE LA RISPOSTA SCRITTA DALL'UTENTE (DA VEDERE)!-->
+    <input type="button" value="Invia" onclick="controlloRisposta()">
+</div>
+</div>
 </body>
 </html>
