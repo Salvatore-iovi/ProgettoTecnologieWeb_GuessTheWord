@@ -66,6 +66,7 @@ body {
 }
 .descrizione{
     font-family: cursive;
+    font-weight: bold;
     font-size: large;
     margin: 20px auto;
     height: 120px;
@@ -79,24 +80,28 @@ body {
     bottom: 30px;
     -webkit-transform: rotate(270deg);
 
+
 }
 .freccia-start2{
     position: absolute;
     left: 725px;
     top: 560px;
     -webkit-transform: rotate(90deg);
+
 }
 .freccia-start3{
     position: absolute;
     left: 635px;
     bottom: 85px;
     -webkit-transform: rotate(360deg);
+
 }
 .freccia-start4{
     position: absolute;
     right: 670px;
     bottom: 90px;
     -webkit-transform: rotate(180deg);
+
 }
 .start input {
     text-align: center;
