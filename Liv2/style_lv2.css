@@ -59,20 +59,12 @@ body{
 .Home{
     text-align: center;
 }
-/*.schermata_foto{
-    background-color: lightgrey;
-    position: absolute;
-    left: 500px;
-    right: 500px;
-    width: 500px;
-    height: 500px;
-}*/
 .Home input{
     text-align: center;
     font-family: cursive;
     font-size: medium;
     border-radius: 8px;
-   /* margin-right: 800px;*/
+    margin-left: 1400px;
     border-color: lightgrey;
     cursor:pointer;
     box-shadow: 5px  5px 1px black;
@@ -81,20 +73,7 @@ body{
     -webkit-transform: rotate(180deg);
     width: 30pt;
     height: 30pt;
-
-}
-#tasto_home{
-    position: absolute;
-    top: 300px;
-    left: 1425px;
-}
-#tasto_suggerimenti{
-    position: absolute;
-    top: 430px;
-    right: 30px;
-}
-.Suggerimenti{
-    top: -100px;
+    margin-left: 1400px;
 }
 .Suggerimenti img{
     height: 50px;
@@ -120,7 +99,7 @@ body{
     font-family: cursive;
     font-size: small;
     border-radius: 8px;
-    margin-left: 550px;
+    margin-left: 590px;
     float: left;
     display: block;
     border-color: lightgrey;
@@ -135,18 +114,8 @@ body{
     border-radius: 8px;
     float: left;
     display: block;
-    margin-left: 970px;
-    margin-top: -22px;
+    margin-left: 10px;
     border-color: lightgrey;
     cursor: pointer;
     box-shadow: 5px  5px 1px black;
-}
-.image_liv1{
-    display: flex;
-    margin-left: 525px;
-    margin-right: 525px;
-}
-.col{
-   flex: 1;
-    padding: 1em;
 }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Livello 2</title>
+    <link rel="stylesheet" href="style_lv2.css">
+</head>
+<body>
+<!--NAVBAR!-->
+<div class="navbar">
+    <img class="image" width="60px" height="60px" src="../image/logo.png">
+    <a href="#Home">Home</a>
+    <a href="#Home">Home</a>
+</div>
+
+<script src="Liv2.js"></script>
+<div class="titolo">
+    <h1>Guess The Word</h1>
+</div>
+<div class="immagini">
+
+</div>
+<div class="Home">
+    <img src="../image/freccia-start.png">
+    <p>
+        <input type="button" value="Home" onclick="mostraMessaggio()">
+    </p>
+</div>
+
+<!--TASTO SUGGERIMENTI!-->
+<div class="Suggerimenti">
+    <img src="../image/suggerimenti.png">
+    <p>
+        <input type="button" value="Suggerimenti" onclick="suggerimenti()">
+    </p>
+</div>
+<!--FORM PER INSERIRE IL TESTO!-->
+<div class="text-area">
+    <input  id="risposta_utente" type="text" size="30" maxlength="30">
+    <div class="invio">
+        <!--BOTTONE PER INVIARE LA RISPOSTA SCRITTA DALL'UTENTE (DA VEDERE)!-->
+        <input  type="button" value="Invia" value="risposta_utente" onclick="controlloRisposta()">
+    </div>
+</div>
+</body>
+</html>

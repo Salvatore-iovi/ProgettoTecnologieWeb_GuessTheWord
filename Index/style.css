@@ -1,5 +1,5 @@
 body {
-    background-color: #b8a185;
+    background-color: #a2b895;
 }
 #center {
 
@@ -55,7 +55,6 @@ body {
 .titolo{
    text-align: center;
    font-size: xxx-large;/*imposta una grandezza del font*/
-    /*font-palette: light;*/
     font-family: cursive;
     background: linear-gradient(to right,red 20%,#39ff14 50%,blue 100%);
     background-size: cover;

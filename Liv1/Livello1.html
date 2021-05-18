@@ -14,35 +14,54 @@
 </div>
 
 <script src="Liv1.js"></script>
+
     <div class="titolo">
       <h1>Guess The Word</h1>
     </div>
-<div class="immagini">
+<!--INSERIMENTO IMMAGINI!-->
+    <div class="schermata_foto">
+<div class="image_liv1">
+    <div class="col">
+        <img  src="../image_words/Liv1/image1.jpg">
+    </div>
+    <div class="col">
+        <img src="../image_words/Liv1/image2.jpg">
+    </div>
+</div>
+<div class="image_liv1">
+    <div class="col">
+        <img src="../image_words/Liv1/image3.jpg">
+    </div>
+    <div class="col">
+        <img src="../image_words/Liv1/image4.jpg">
+    </div>
+</div>
 
-</div>
-<div class="Home">
-    <img src="../image/freccia-start.png">
-    <p>
-        <input type="button" value="Home" onclick="mostraMessaggio()">
-    </p>
-</div>
+        <!--TASTO HOME!-->
+        <div class="Home" id="tasto_home">
+            <img src="../image/freccia-start.png">
+            <p>
+                <input type="button" value="Home" onclick="mostraMessaggio()">
+            </p>
+        </div>
 
-    <!--TASTO SUGGERIMENTI!-->
-    <div class="Suggerimenti">
-        <img src="../image/suggerimenti.png">
-    <p>
-        <input type="button" value="Suggerimenti" onclick="suggerimenti()">
-    </p>
-</div>
-<!--FORM PER INSERIRE IL TESTO!-->
-<div class="text-area">
-        <input type="text" size="30" maxlength="30">
-<div class="invio">
-    <!--BOTTONE PER INVIARE LA RISPOSTA SCRITTA DALL'UTENTE (DA VEDERE)!-->
-    <span id="risposta_utente">
-        <input type="button" value="Invia" value="risposta_utente" onclick="controlloRisposta(risposta_utente)">
-    </span>
-</div>
-</div>
+        <!--TASTO SUGGERIMENTI!-->
+        <div class="Suggerimenti" id="tasto_suggerimenti">
+            <img src="../image/suggerimenti.png">
+            <p>
+                <input type="button" value="Suggerimenti" onclick="suggerimenti()">
+            </p>
+        </div>
+        <!--FORM PER INSERIRE IL TESTO!-->
+        <div class="text-area">
+            <input  id="risposta_utente" type="text" size="45" maxlength="45">
+            <div class="invio">
+                <!--BOTTONE PER INVIARE LA RISPOSTA SCRITTA DALL'UTENTE (DA VEDERE)!-->
+                <input  type="button" value="Invia" value="risposta_utente" onclick="controlloRisposta()">
+            </div>
+
+        </div>
+    </div>
+
 </body>
 </html>
