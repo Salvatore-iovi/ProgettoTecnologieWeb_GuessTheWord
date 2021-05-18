@@ -13,7 +13,6 @@ function controlloRisposta()
     let risposta_esatta="investigatore"
     let display=document.getElementById("risposta_utente")
     let displayValue=display.value
-    console.log(":::" +displayValue)
     if(displayValue===risposta_esatta)
     {
         alert("Risposta esatta")
