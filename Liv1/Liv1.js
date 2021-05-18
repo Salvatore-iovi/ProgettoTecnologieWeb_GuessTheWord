@@ -19,6 +19,7 @@ function controlloRisposta()
         location.href="http://localhost:63342/GuessTheWord/Liv2/Livello2.html?_ijt=n2anun9vr4ue7j1g0vomjdtnf9"
     }else{
         alert("Risposta errata...Riprova")
+        display.value=""
     }
 }
 

@@ -19,5 +19,6 @@ function controlloRisposta()
         location.href=""
     }else{
         alert("Risposta errata...Riprova")
+        display.value=""
     }
 }
