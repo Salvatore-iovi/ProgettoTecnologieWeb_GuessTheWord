@@ -2,45 +2,66 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Livello 2</title>
+    <title>Guess The Word | IL GIOCO</title>
     <link rel="stylesheet" href="style_lv2.css">
 </head>
 <body>
 <!--NAVBAR!-->
-<div class="navbar">
+<!--<div class="navbar">
     <img class="image" width="60px" height="60px" src="../image/logo.png">
     <a href="#Home">Home</a>
     <a href="#Home">Home</a>
-</div>
+</div>!-->
 
 <script src="Liv2.js"></script>
-<div class="titolo">
-    <h1>Guess The Word</h1>
-</div>
-<div class="immagini">
 
+<div class="titolo" id="titolo">
+    <h2>Livello 2</h2>
 </div>
-<div class="Home">
-    <img src="../image/freccia-start.png">
-    <p>
-        <input type="button" value="Home" onclick="mostraMessaggio()">
-    </p>
-</div>
+<!--INSERIMENTO IMMAGINI!-->
+<div class="schermata_foto">
+    <div class="image_liv1">
+        <div class="col">
+            <img  src="../image_words/Liv2/image1.jpg" onmouseover="this.width=250;this.height=250;" onmouseout="this.width=200;this.height=200;">
+        </div>
+        <div class="col">
+            <img src="../image_words/Liv2/image2.jpg" onmouseover="this.width=250;this.height=250;" onmouseout="this.width=200;this.height=200;">
+        </div>
+    </div>
+    <div class="image_liv1">
+        <div class="col">
+            <img src="../image_words/Liv2/image3.jpg" onmouseover="this.width=250;this.height=250;" onmouseout="this.width=200;this.height=200;">
+        </div>
+        <div class="col">
+            <img src="../image_words/Liv2/image4.jpg" onmouseover="this.width=250;this.height=250;" onmouseout="this.width=200;this.height=200;">
+        </div>
+    </div>
 
-<!--TASTO SUGGERIMENTI!-->
-<div class="Suggerimenti">
-    <img src="../image/suggerimenti.png">
-    <p>
-        <input type="button" value="Suggerimenti" onclick="suggerimenti()">
-    </p>
-</div>
-<!--FORM PER INSERIRE IL TESTO!-->
-<div class="text-area">
-    <input  id="risposta_utente" type="text" size="30" maxlength="30">
-    <div class="invio">
-        <!--BOTTONE PER INVIARE LA RISPOSTA SCRITTA DALL'UTENTE (DA VEDERE)!-->
-        <input  type="button" value="Invia" value="risposta_utente" onclick="controlloRisposta()">
+    <!--TASTO HOME!-->
+    <div class="Home" id="tasto_home">
+        <img src="../image/freccia-start.png">
+        <p>
+            <input type="button" value="Home" onclick="mostraMessaggio()">
+        </p>
+    </div>
+
+    <!--TASTO SUGGERIMENTI!-->
+    <div class="Suggerimenti" id="tasto_suggerimenti">
+        <img src="../image/suggerimenti.png">
+        <p>
+            <input type="button" value="Suggerimenti" onclick="suggerimenti()">
+        </p>
+    </div>
+    <!--FORM PER INSERIRE IL TESTO!-->
+    <div class="text-area">
+        <input  id="risposta_utente" type="text" size="45" maxlength="45">
+        <div class="invio">
+            <!--BOTTONE PER INVIARE LA RISPOSTA SCRITTA DALL'UTENTE!-->
+            <input  type="button" value="Invia" value="risposta_utente" onclick="controlloRisposta()">
+        </div>
+
     </div>
 </div>
+
 </body>
 </html>

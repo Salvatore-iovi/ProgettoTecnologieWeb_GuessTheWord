@@ -4,16 +4,23 @@ body{
 .titolo {
     text-align: center;
     font-size: xx-large; /*imposta una grandezza del font*/
-    /*font-palette: light;*/
     font-family: cursive;
-    background: linear-gradient(to right,red 30%,#39ff14 50%,blue 100%);
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
     -webkit-text-stroke: 3px black; /*imposta un bordo del testo*/
 }
-.navbar{/*modifichiamo lo stile della navbar*/
+#titolo{
+    background: snow;
+    margin-left: 600px;
+    right: 500px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 5px  5px 1px black;
+
+}
+/*.navbar{modifichiamo lo stile della navbar
     background-color: darkgrey;
     height: 50px;
     border-radius: 5px;
@@ -25,7 +32,7 @@ body{
     position: absolute;
     top: 7px;
 }
-.navbar a{/*modifichiamo lo stile degli elementi della navbar*/
+.navbar a{/*modifichiamo lo stile degli elementi della navbar
 
     text-decoration: none;
     font-family: cursive;
@@ -37,14 +44,14 @@ body{
 .navbar img{
     margin-left: -50px
 }
-.navbar a:hover{/*impostiamo lo stile di quando passo col mouse su un elemento*/
+.navbar a:hover{/*impostiamo lo stile di quando passo col mouse su un elemento
     background-color: white ;
     color:black;
     border-radius: 10px;
     width: 40px;
     height: 20px;
 }
-.navbar a.active{/*impostiamo uno stile per una pagina attiva cioè dove stoo io al momento*/
+.navbar a.active{/*impostiamo uno stile per una pagina attiva cioè dove stoo io al momento
     background-color: lightgrey;
     color: white;
 }
@@ -55,7 +62,7 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     margin-left: -30px;
-}
+}*/
 .Home{
     text-align: center;
 }
@@ -85,12 +92,12 @@ body{
 }
 #tasto_home{
     position: absolute;
-    top: 300px;
+    top: 200px;
     left: 1425px;
 }
 #tasto_suggerimenti{
     position: absolute;
-    top: 430px;
+    top: 310px;
     right: 30px;
 }
 .Suggerimenti{
@@ -145,6 +152,7 @@ body{
     display: flex;
     margin-left: 525px;
     margin-right: 525px;
+    cursor: pointer;
 }
 .col{
    flex: 1;
