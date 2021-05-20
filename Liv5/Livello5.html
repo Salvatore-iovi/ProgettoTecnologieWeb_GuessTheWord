@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Guess The Word | IL GIOCO</title>
+  <link rel="stylesheet" href="style_lv5.css">
+  <link rel="icon" href="../image/web-icon.png" type="image/png"/>
+</head>
+<body>
+<!--NAVBAR!-->
+<!--<div class="navbar">
+    <img class="image" width="60px" height="60px" src="../image/logo.png">
+    <a href="#Home">Home</a>
+    <a href="#Home">Home</a>
+</div>!-->
+
+<script src="Liv5.js"></script>
+
+<div class="titolo" id="titolo" title="Blu:Difficoltà media" style="cursor: progress">
+  <h2>Livello 5</h2>
+</div>
+<!--INSERIMENTO IMMAGINI!-->
+<div class="schermata_foto">
+  <div class="image">
+    <div class="col">
+      <img  src="../image_words/Liv5/image1.png" onmouseover="this.width=250;this.height=250;" onmouseout="this.width=200;this.height=200;">
+    </div>
+    <div class="col">
+      <img src="../image_words/Liv5/image2.jpg" onmouseover="this.width=250;this.height=250;" onmouseout="this.width=200;this.height=200;">
+    </div>
+  </div>
+  <div class="image">
+    <div class="col">
+      <img src="../image_words/Liv5/image3.jpg" onmouseover="this.width=250;this.height=250;" onmouseout="this.width=200;this.height=200;">
+    </div>
+    <div class="col">
+      <img src="../image_words/Liv5/image4.jpg" onmouseover="this.width=250;this.height=250;" onmouseout="this.width=200;this.height=200;">
+    </div>
+  </div>
+
+  <!--TASTO HOME!-->
+  <div class="Home" id="tasto_home">
+    <img src="../image/freccia-start.png">
+    <p>
+      <input type="button" value="Home" onclick="mostraMessaggio()">
+    </p>
+  </div>
+
+  <!--TASTO SUGGERIMENTI!-->
+  <div class="Suggerimenti" id="tasto_suggerimenti">
+    <img src="../image/suggerimenti.png">
+    <p>
+      <input type="button" value="Suggerimenti" onclick="suggerimenti()">
+    </p>
+  </div>
+  <!--RICOMINCIA!-->
+  <div class="ricomincia" id="tasto_ricomincia">
+    <img src="../image/ricomincia.png">
+    <p>
+      <input type="button" value="Ricomincia" onclick="ricomincia()">
+    </p>
+
+  </div>
+  <!--FORM PER INSERIRE IL TESTO!-->
+  <div class="text-area">
+    <input  id="risposta_utente" type="text" size="45" maxlength="45">
+    <div class="invio">
+      <!--BOTTONE PER INVIARE LA RISPOSTA SCRITTA DALL'UTENTE!-->
+      <input  type="button" value="Invia" value="risposta_utente"  onclick="controlloRisposta()">
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

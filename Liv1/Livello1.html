@@ -21,7 +21,7 @@
     </div>
 <!--INSERIMENTO IMMAGINI!-->
     <div class="schermata_foto">
-<div class="image_liv1">
+<div class="image">
     <div class="col">
         <img  src="../image_words/Liv1/image1.jpg" onmouseover="this.width=250;this.height=250;" onmouseout="this.width=200;this.height=200;">
     </div>
@@ -29,7 +29,7 @@
         <img src="../image_words/Liv1/image2.jpg" onmouseover="this.width=250;this.height=250;" onmouseout="this.width=200;this.height=200;">
     </div>
 </div>
-<div class="image_liv1">
+<div class="image">
     <div class="col">
         <img src="../image_words/Liv1/image3.jpg" onmouseover="this.width=250;this.height=250;" onmouseout="this.width=200;this.height=200;">
     </div>
@@ -53,15 +53,6 @@
                 <input type="button" value="Suggerimenti" onclick="suggerimenti()">
             </p>
         </div>
-        <!--FORM PER INSERIRE IL TESTO!-->
-        <div class="text-area">
-            <input  id="risposta_utente" type="text" size="45" maxlength="45">
-            <div class="invio">
-                <!--BOTTONE PER INVIARE LA RISPOSTA SCRITTA DALL'UTENTE!-->
-                <input  type="button" value="Invia" value="risposta_utente"  onclick="controlloRisposta()">
-            </div>
-
-        </div>
         <!--RICOMINCIA!-->
         <div class="ricomincia" id="tasto_ricomincia">
             <img src="../image/ricomincia.png">
@@ -71,6 +62,14 @@
 
         </div>
     </div>
+        <!--FORM PER INSERIRE IL TESTO!-->
+        <div class="text-area">
+            <input  id="risposta_utente" type="text" size="45" maxlength="45">
+            <div class="invio">
+                <!--BOTTONE PER INVIARE LA RISPOSTA SCRITTA DALL'UTENTE!-->
+                <input  type="button" value="Invia" value="risposta_utente"  onclick="controlloRisposta()">
+            </div>
+        </div>
 
 </body>
 </html>

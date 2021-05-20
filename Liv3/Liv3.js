@@ -7,17 +7,17 @@ function mostraMessaggio()
     }
 }
 function suggerimenti() {
-    alert("In passato era un vichingo")//suggerimenti per indovinare la parola
+    alert("Conversare ad alta voce")
 }
 function controlloRisposta()
 {
-    let risposta_esatta="scandinavo"//risposta corretta
-    let display=document.getElementById("risposta_utente")//vado ad estrarre il contenuto della variabile risposta utente
+    let risposta_esatta="urlare"
+    let display=document.getElementById("risposta_utente")
     let displayValue=display.value
-    if(displayValue.toLowerCase()===risposta_esatta)//verifico se la risposta utente è uguale a risposta esatta
+    if(displayValue.toLowerCase()===risposta_esatta)
     {
         alert("Risposta esatta")
-        location.href=""
+        location.href="http://localhost:63342/GuessTheWord/Liv4/Livello4.html?_ijt=9fsg13he1hhjeb6og0km05tkvc"
     }else{
         tentativi--
         alert("Risposta errata...Ti restano: " +tentativi+ " tentativi")
@@ -34,3 +34,4 @@ function ricomincia()
     confirm("Stai per ricominciare la partita...Vuoi continuare?")
     location.href="http://localhost:63342/GuessTheWord/Liv1/Livello1.html?_ijt=tcobftjgvaa3um95jjq4qq6jgm"
 }
+

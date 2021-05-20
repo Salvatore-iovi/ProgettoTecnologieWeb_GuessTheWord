@@ -7,17 +7,17 @@ function mostraMessaggio()
     }
 }
 function suggerimenti() {
-    alert("Non brillano di luce propria")
+    alert("Con sessanta si arriva al minuto")
 }
 function controlloRisposta()
 {
-    let risposta_esatta="pianeti"
+    let risposta_esatta="secondi"
     let display=document.getElementById("risposta_utente")
     let displayValue=display.value
     if(displayValue.toLowerCase()===risposta_esatta)
     {
         alert("Risposta esatta")
-        location.href="http://localhost:63342/GuessTheWord/Liv3/Livello3.html?_ijt=9fsg13he1hhjeb6og0km05tkvc"
+        location.href="http://localhost:63342/GuessTheWord/Liv5/Livello5.html?_ijt=9fsg13he1hhjeb6og0km05tkvc"
     }else{
         tentativi--
         alert("Risposta errata...Ti restano: " +tentativi+ " tentativi")

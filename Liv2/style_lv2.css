@@ -1,5 +1,5 @@
 body{
-    background-color: #a2b895;
+    background-color: #ffad4f;
 }
 .titolo {
     text-align: center;
@@ -148,7 +148,7 @@ body{
     cursor: pointer;
     box-shadow: 5px  5px 1px black;
 }
-.image_liv1{
+.image{
     display: flex;
     margin-left: 525px;
     margin-right: 525px;

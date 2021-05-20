@@ -12,7 +12,7 @@ body{
     -webkit-text-stroke: 3px black; /*imposta un bordo del testo*/
 }
 #titolo{
-    background: snow;
+    background: cornflowerblue;
     margin-left: 600px;
     right: 500px;
     width: 300px;
@@ -79,7 +79,7 @@ body{
     font-family: cursive;
     font-size: medium;
     border-radius: 8px;
-   /* margin-right: 800px;*/
+    /* margin-right: 800px;*/
     border-color: lightgrey;
     cursor:pointer;
     box-shadow: 5px  5px 1px black;
@@ -155,7 +155,7 @@ body{
     cursor: pointer;
 }
 .col{
-   flex: 1;
+    flex: 1;
     padding: 1em;
 }
 .ricomincia img{
