@@ -159,10 +159,10 @@ body{
     padding: 1em;
 }
 .ricomincia img{
-    height: 45px;
-    width: 45px;
-    margin-bottom: -20px;
-    margin-left: 460px;
+    height: 80px;
+    width: 80px;
+    margin-bottom: -30px;
+    margin-left: 445px;
 }
 .ricomincia input{
     text-align: center;
@@ -172,10 +172,12 @@ body{
     box-shadow: 5px 5px 1px black;
     cursor: pointer;
     margin-left: 442px;
+    margin-top: 10px;
 
 }
 #tasto_ricomincia{
     position: absolute;
-    bottom: 220px;
-    left: 980px
+    bottom: 210px;
+    left: 970px
+
 }
