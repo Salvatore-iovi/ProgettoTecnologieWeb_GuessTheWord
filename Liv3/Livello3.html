@@ -15,8 +15,8 @@
 
 <script src="Liv3.js"></script>
 
-<div class="titolo" id="titolo">
-  <h2>Livello 3</h2>
+<div class="titolo" id="titolo" title="Bianco: Difficoltà Facile" style="cursor: progress">
+  <h2>Livello 2</h2>
 </div>
 <!--INSERIMENTO IMMAGINI!-->
 <div class="schermata_foto">
@@ -57,8 +57,16 @@
     <input  id="risposta_utente" type="text" size="45" maxlength="45">
     <div class="invio">
       <!--BOTTONE PER INVIARE LA RISPOSTA SCRITTA DALL'UTENTE!-->
-      <input  type="button" value="Invia" value="risposta_utente" onclick="controlloRisposta()">
+      <input  type="button" value="Invia" value="risposta_utente"  onclick="controlloRisposta()">
     </div>
+
+  </div>
+  <!--RICOMINCIA!-->
+  <div class="ricomincia" id="tasto_ricomincia">
+    <img src="../image/ricomincia.png">
+    <p>
+      <input type="button" value="Ricomincia" onclick="ricomincia()">
+    </p>
 
   </div>
 </div>

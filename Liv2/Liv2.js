@@ -1,3 +1,4 @@
+var tentativi=3
 function mostraMessaggio()
 {
     messaggio=confirm("vuoi davvero tornare alla home? Tutti i progressi andranno persi")
@@ -6,19 +7,31 @@ function mostraMessaggio()
     }
 }
 function suggerimenti() {
-    alert("Non brillano di luce propria")//suggerimenti per indovinare la parola
+    alert("Non brillano di luce propria")
 }
 function controlloRisposta()
 {
-    let risposta_esatta="pianeti"//risposta corretta
-    let display=document.getElementById("risposta_utente")//vado ad estrarre il contenuto della variabile risposta utente
+    let risposta_esatta="pianeti"
+    let display=document.getElementById("risposta_utente")
     let displayValue=display.value
-    if(displayValue.toLowerCase()===risposta_esatta)//verifico se la risposta utente è uguale a risposta esatta
+    if(displayValue.toLowerCase()===risposta_esatta)
     {
         alert("Risposta esatta")
-        location.href="http://localhost:63342/GuessTheWord/Liv3/Livello3.html?_ijt=k4kju5rnqjl2antg9bm6vh6df9"
+        location.href="http://localhost:63342/GuessTheWord/Liv3/Livello3.html?_ijt=dfcudn2bpn4put4nr9qhlg9vqf"
     }else{
-        alert("Risposta errata...Riprova")
+        tentativi--
+        alert("Risposta errata...Ti restano: " +tentativi+ " tentativi")
         display.value=""
+        if(tentativi==0)
+        {
+            alert("Hai perso")
+            location.href="http://localhost:63342/GuessTheWord/Index/index.html?_ijt=67i1nsgsb6dook9fnd981spm60"
+        }
     }
 }
+function ricomincia()
+{
+    confirm("Stai per ricominciare la partita...Vuoi continuare?")
+    location.href="http://localhost:63342/GuessTheWord/Liv1/Livello1.html?_ijt=tcobftjgvaa3um95jjq4qq6jgm"
+}
+

@@ -1,3 +1,4 @@
+var tentativi=3
 function mostraMessaggio()
 {
     messaggio=confirm("vuoi davvero tornare alla home? Tutti i progressi andranno persi")
@@ -18,7 +19,18 @@ function controlloRisposta()
         alert("Risposta esatta")
         location.href=""
     }else{
-        alert("Risposta errata...Riprova")
+        tentativi--
+        alert("Risposta errata...Ti restano: " +tentativi+ " tentativi")
         display.value=""
+        if(tentativi==0)
+        {
+            alert("Hai perso")
+            location.href="http://localhost:63342/GuessTheWord/Index/index.html?_ijt=67i1nsgsb6dook9fnd981spm60"
+        }
     }
+}
+function ricomincia()
+{
+    confirm("Stai per ricominciare la partita...Vuoi continuare?")
+    location.href="http://localhost:63342/GuessTheWord/Liv1/Livello1.html?_ijt=tcobftjgvaa3um95jjq4qq6jgm"
 }

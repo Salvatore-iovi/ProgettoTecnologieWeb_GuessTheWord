@@ -158,3 +158,24 @@ body{
    flex: 1;
     padding: 1em;
 }
+.ricomincia img{
+    height: 45px;
+    width: 45px;
+    margin-bottom: -20px;
+    margin-left: 460px;
+}
+.ricomincia input{
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+    border-radius: 8px;
+    box-shadow: 5px 5px 1px black;
+    cursor: pointer;
+    margin-left: 442px;
+
+}
+#tasto_ricomincia{
+    position: absolute;
+    bottom: 220px;
+    left: 980px
+}
