@@ -1,0 +1,183 @@
+body{
+    background-color: #ffad4f;
+}
+.titolo {
+    text-align: center;
+    font-size: xx-large; /*imposta una grandezza del font*/
+    font-family: cursive;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    -webkit-text-stroke: 3px black; /*imposta un bordo del testo*/
+}
+#titolo{
+    background: red;
+    margin-left: 600px;
+    right: 500px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 5px  5px 1px black;
+
+}
+/*.navbar{modifichiamo lo stile della navbar
+    background-color: darkgrey;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 5px  5px 1px black;
+    overflow: hidden;
+    text-align: center;
+}
+.image{
+    position: absolute;
+    top: 7px;
+}
+.navbar a{/*modifichiamo lo stile degli elementi della navbar
+
+    text-decoration: none;
+    font-family: cursive;
+    float: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+.navbar img{
+    margin-left: -50px
+}
+.navbar a:hover{/*impostiamo lo stile di quando passo col mouse su un elemento
+    background-color: white ;
+    color:black;
+    border-radius: 10px;
+    width: 40px;
+    height: 20px;
+}
+.navbar a.active{/*impostiamo uno stile per una pagina attiva cioè dove stoo io al momento
+    background-color: lightgrey;
+    color: white;
+}
+.button{
+    width: 10px ;
+    height: 10px;
+    background-image: url("../image/suggerimenti.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: -30px;
+}*/
+.Home{
+    text-align: center;
+}
+/*.schermata_foto{
+    background-color: lightgrey;
+    position: absolute;
+    left: 500px;
+    right: 500px;
+    width: 500px;
+    height: 500px;
+}*/
+.Home input{
+    text-align: center;
+    font-family: cursive;
+    font-size: medium;
+    border-radius: 8px;
+    /* margin-right: 800px;*/
+    border-color: lightgrey;
+    cursor:pointer;
+    box-shadow: 5px  5px 1px black;
+}
+.Home img{
+    -webkit-transform: rotate(180deg);
+    width: 30pt;
+    height: 30pt;
+
+}
+#tasto_home{
+    position: absolute;
+    top: 200px;
+    left: 1425px;
+}
+#tasto_suggerimenti{
+    position: absolute;
+    top: 310px;
+    right: 30px;
+}
+.Suggerimenti{
+    top: -100px;
+}
+.Suggerimenti img{
+    height: 50px;
+    width: 50px;
+    margin-left: 1440px ;
+
+}
+.Suggerimenti input{
+    text-align: center;
+    font-family: cursive;
+    font-size: smaller;
+    border-radius: 8px;
+    height: 40px;
+    width: 100px;
+    border-color: lightgrey;
+    mso-border-shadow: yes;
+    margin-left: 1415px ;
+    cursor:pointer;
+    box-shadow: 5px  5px 1px black;
+}
+.text-area input{
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+    border-radius: 8px;
+    margin-left: 550px;
+    float: left;
+    display: block;
+    border-color: lightgrey;
+    cursor: text;
+    box-shadow: 5px  5px 1px black;
+
+}
+.invio input{
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+    border-radius: 8px;
+    float: left;
+    display: block;
+    margin-left: 970px;
+    margin-top: -22px;
+    border-color: lightgrey;
+    cursor: pointer;
+    box-shadow: 5px  5px 1px black;
+}
+.image{
+    display: flex;
+    margin-left: 525px;
+    margin-right: 525px;
+    cursor: pointer;
+}
+.col{
+    flex: 1;
+    padding: 1em;
+}
+.ricomincia img{
+    height: 80px;
+    width: 80px;
+    margin-bottom: -30px;
+    margin-left: 445px;
+}
+.ricomincia input{
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+    border-radius: 8px;
+    box-shadow: 5px 5px 1px black;
+    cursor: pointer;
+    margin-left: 442px;
+    margin-top: 10px;
+
+}
+#tasto_ricomincia{
+    position: absolute;
+    bottom: 210px;
+    left: 970px
+
+}

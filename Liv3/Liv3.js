@@ -1,7 +1,7 @@
 var tentativi=3
 function mostraMessaggio()
 {
-    messaggio=confirm("vuoi davvero tornare alla home? Tutti i progressi andranno persi")
+    messaggio=confirm("Vuoi davvero tornare alla home? Tutti i progressi andranno persi")
     if(messaggio==true){
         location.href="http://localhost:63342/GuessTheWord/Index/index.html?_ijt=7b57a8tekicc8e6vr3irjusvh5"
     }

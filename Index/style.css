@@ -79,8 +79,12 @@ body {
     bottom: 30px;
     -webkit-transform: rotate(270deg);
 
-
 }
+/*freccia-start1.slide-right{
+    animation: slide-right 10s;
+    margin-right: 0%;
+
+}*/
 .freccia-start2{
     position: absolute;
     left: 725px;
@@ -120,4 +124,11 @@ body {
 .start p{
     text-align: center;
 }
-
+/*@keyframes slide-right{
+    from{
+        margin-right: 100%;
+    }
+    to{
+    margin-right: 0%;
+}
+}*/

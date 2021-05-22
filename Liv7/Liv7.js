@@ -1,7 +1,7 @@
 var tentativi=3
 function mostraMessaggio()
 {
-    messaggio=confirm("vuoi davvero tornare alla home? Tutti i progressi andranno persi")
+    messaggio=confirm("Vuoi davvero tornare alla home? Tutti i progressi andranno persi")
     if(messaggio==true){
         location.href="http://localhost:63342/GuessTheWord/Index/index.html?_ijt=7b57a8tekicc8e6vr3irjusvh5"
     }
@@ -17,7 +17,7 @@ function controlloRisposta()
     if(displayValue.toLowerCase()===risposta_esatta)//verifico se la risposta utente è uguale a risposta esatta
     {
         alert("Risposta esatta")
-        location.href=""
+        location.href="http://localhost:63342/GuessTheWord/Liv8/Livello8.html?_ijt=p8ajeievimkehu27oup6n0qkja"
     }else{
         tentativi--
         alert("Risposta errata...Ti restano: " +tentativi+ " tentativi")
