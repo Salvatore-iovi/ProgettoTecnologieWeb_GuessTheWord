@@ -7,11 +7,11 @@ function mostraMessaggio()
     }
 }
 function suggerimenti() {
-    alert("Paura ossessiva della profondità")//suggerimenti per indovinare la parola
+    alert("Si occupa della selezione degli stracci")//suggerimenti per indovinare la parola
 }
 function controlloRisposta()
 {
-    let risposta_esatta="batofobia"//risposta corretta
+    let risposta_esatta="cenciaiolo"//risposta corretta
     let display=document.getElementById("risposta_utente")//vado ad estrarre il contenuto della variabile risposta utente
     let displayValue=display.value
     if(displayValue.toLowerCase()===risposta_esatta)//verifico se la risposta utente è uguale a risposta esatta

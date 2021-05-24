@@ -1,0 +1,31 @@
+body{
+    background-color: #ffad4f;
+}
+.titolo{
+    text-align: center;
+    font-family: cursive;
+    font-size: x-large;
+    background: linear-gradient(to right,red 20%,#39ff14 50%,blue 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    -webkit-text-stroke: 3px black;
+}
+.tabella p{
+    text-align: center;
+    font-family: cursive;
+    font-size: medium;
+    font-weight: bold;
+}
+.tabella table{
+    border-collapse: collapse;
+    alignment: center;
+    font-family: cursive;
+    font-size: medium;
+    margin-left: 600px;
+}
+.tabella td,th{
+    border: 3px solid black;
+    padding: 8px;
+}
