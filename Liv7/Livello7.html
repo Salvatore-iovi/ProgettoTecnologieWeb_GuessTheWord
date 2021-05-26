@@ -7,13 +7,6 @@
   <link rel="icon" href="../image/web-icon.png" type="image/png"/>
 </head>
 <body>
-<!--NAVBAR!-->
-<!--<div class="navbar">
-    <img class="image" width="60px" height="60px" src="../image/logo.png">
-    <a href="#Home">Home</a>
-    <a href="#Home">Home</a>
-</div>!-->
-
 <script src="Liv7.js"></script>
 
 <div class="titolo" id="titolo" title="Giallo:Difficoltà Media" style="cursor: progress">
@@ -39,29 +32,41 @@
   </div>
 
   <!--TASTO HOME!-->
-  <div class="Home" id="tasto_home">
-    <img src="../image/freccia-start.png">
-    <p>
-      <input type="button" value="Home" onclick="mostraMessaggio()">
-    </p>
+  <input title="Home" class="Home" type="image" src="../image/freccia-start.png" name="image" onclick="openHome()">
+  <div class="home_popup" id="myhomepopup">
+    <form class="home_container">
+      <img src="../image/warning.png" class="image_warning_home">
+      <h3>Attenzione:</h3>
+      <h3>stai per tornare alla home tutti i progressi andranno persi continuare?</h3>
+      <button type="button" class="ok_button" onclick="pressOk()">Ok</button>
+      <button type="button" class="cancel_button" onclick="closeHome()">Cancel</button>
+    </form>
   </div>
 
   <!--TASTO SUGGERIMENTI!-->
-  <div class="Suggerimenti" id="tasto_suggerimenti">
-    <img src="../image/suggerimenti.png">
-    <p>
-      <input type="button" value="Suggerimenti" onclick="suggerimenti()">
-    </p>
+  <input title="Suggerimenti" class="suggerimenti" type="image" src="../image/suggerimenti.png" name="image" onclick="openSuggerimenti()">
+  <div class="form-popup" id="myForm">
+    <form  class="form-container">
+      <img src="../image/lente_suggerimenti.png" class="lente_suggerimenti">
+      <h3>Suggerimento:</h3>
+      <h3>ne è composta l'acqua e non solo</h3>
+      <button type="button" class="cancel" onclick="closeSuggerimenti()">Close</button>
+    </form>
   </div>
   <!--RICOMINCIA!-->
-  <div class="ricomincia" id="tasto_ricomincia">
-    <img src="../image/ricomincia.png">
-    <p>
-      <input type="button" value="Ricomincia" onclick="ricomincia()">
-    </p>
-
+  <input title="Ricomincia" class="ricomincia" type="image" src="../image/ricomincia.png" name="image" onclick="openRicomincia()">
+  <div class="ricomincia_popup" id="myricominciapopup">
+    <form class="ricomincia_container">
+      <img src="../image/warning.png" class="image_warning_ricomincia">
+      <h3>Attenzione:</h3>
+      <h3>vuoi davvero ricominciare?Tutti i progressi andranno persi</h3>
+      <button type="button" class="ok_button_ricomincia" onclick="pressOkRicomincia()">Ok</button>
+      <button type="button" class="cancel_button_ricomincia" onclick="closeRicomincia()">Cancel</button>
+    </form>
   </div>
-  <!--FORM PER INSERIRE IL TESTO!-->
+</div>
+
+<!--FORM PER INSERIRE IL TESTO!-->
   <div class="text-area">
     <input  id="risposta_utente" type="text" size="45" maxlength="45">
     <div class="invio">

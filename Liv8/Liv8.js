@@ -1,14 +1,4 @@
 var tentativi=3
-function mostraMessaggio()
-{
-    messaggio=confirm("Vuoi davvero tornare alla home? Tutti i progressi andranno persi")
-    if(messaggio==true){
-        location.href="http://localhost:63342/GuessTheWord/Index/index.html?_ijt=7b57a8tekicc8e6vr3irjusvh5"
-    }
-}
-function suggerimenti() {
-    alert("Ciò che resta dopo un naufragio")//suggerimenti per indovinare la parola
-}
 function controlloRisposta()
 {
     let risposta_esatta="relitto"//risposta corretta
@@ -29,8 +19,36 @@ function controlloRisposta()
         }
     }
 }
-function ricomincia()
+function openSuggerimenti()
 {
-    confirm("Stai per ricominciare la partita...Vuoi continuare?")
-    location.href="http://localhost:63342/GuessTheWord/Liv1/Livello1.html?_ijt=tcobftjgvaa3um95jjq4qq6jgm"
+    document.getElementById("myForm").style.display="block"
+
+}
+function closeSuggerimenti()
+{
+    document.getElementById("myForm").style.display="none"
+}
+function pressOk()
+{
+    location.href="http://localhost:63342/GuessTheWord/Index/index.html?_ijt=86v8kjac2fhh3m9r185tn6kg5f"
+}
+function openHome()
+{
+    document.getElementById("myhomepopup").style.display="block"
+}
+function closeHome()
+{
+    document.getElementById("myhomepopup").style.display="none"
+}
+function openRicomincia()
+{
+    document.getElementById("myricominciapopup").style.display="block"
+}
+function closeRicomincia()
+{
+    document.getElementById("myricominciapopup").style.display="none"
+}
+function pressOkRicomincia()
+{
+    location.href="http://localhost:63342/GuessTheWord/Liv1/Livello1.html?_ijt=jum6d1m4tuv1uvu7tlrli39599"
 }
