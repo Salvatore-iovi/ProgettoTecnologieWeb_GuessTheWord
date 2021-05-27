@@ -10,33 +10,37 @@
 <div class="titolo">
     <h1>Progetto Tecnologie Web A.A 2020/2021</h1>
 </div>
-                        <!--INSERIMENTO TABELLA!-->
+
+<body>
+<script src="About.js"></script>
+<!--INSERIMENTO TABELLA!-->
 <div class="tabella">
     <p>
-        Gli studenti che hanno contribuito alla realizazione di questo progetto sono:
-        <table>
-                <tr><td style="color: red">Nome</td><td style="color: #39ff14">Cognome</td><td style="color: blue">Matricola</td></tr>
-                <tr><td style="color: red">Salvatore</td><td style="color: #39ff14">Iovinella</td><td style="color: blue">0124001927</td></tr>
-                <tr><td style="color: red">Francesco</td><td style="color: #39ff14">D'Angelo</td><td style="color: blue">0124001792</td></tr>
-        </table>
+        <br>Gli studenti che hanno contribuito alla realizazione di questo progetto sono:
+    <table>
+        <tr><td style="color: snow">Nome</td><td style="color: snow">Cognome</td><td style="color: snow">Matricola</td></tr>
+        <tr><td style="color: snow">Salvatore</td><td style="color: snow">Iovinella</td><td style="color: snow">0124001927</td></tr>
+        <tr><td style="color: snow">Francesco</td><td style="color: snow">D'Angelo</td><td style="color: snow">0124001792</td></tr>
+    </table>
     </p>
 </div>
-                        <!--INSERIMENTO AVATAR!-->
-<div class="avatar">
-<div class="av1">
-    <img class="image" src="../image/avatar1.png" style="margin-left: 480px;display: flex;position: absolute;margin-top: 30px">
-    <p style="text-align: center;font-family: cursive;font-size: small;font-weight: bold; position: absolute; margin-top: 100px; margin-left: 360px">
-        Salvatore-Iovinella:<br>Studente frequentante il terzo anno <br>della Parthenope corso di laurea in informatica<br>
-    </p>
-     </div>
-   <div class="av2">
-       <img class="image2" src="../image/avatar2.png" style="margin-left: 900px;position: absolute;margin-top: 30px">
-       <p style="text-align: center;font-family: cursive;font-size: small;font-weight: bold; position: absolute; margin-top: 100px; margin-left: 790px">
-           Francesco-D'Angelo:<br>Studente frequentante il terzo anno <br>della Parthenope corso di laurea in informatica<br>
-       </p>
-   </div>
-</div>
-<body>
-
+                                        <!--INSERIMENTO AVATAR E POPUP!-->
+        <input title="Salvatore Iovinella" class="salvatore-image" type="image" src="../image/avatar1.png" name="image" onclick="openSalvatorePopup()">
+        <div class="salvatore-popup" id="mysalvatorepopup">
+            <form class="salvatore-container">
+                <h3>Salvatore Iovinella:</h3>
+                <h3>Studente frequentante il terzo anno della Parthenope corso di laurea in informatica</h3>
+            </form>
+            <button type="button" class="ok_button" onclick="closeSalvatorePopup()">Ok</button>
+        </div>
+                                        <!--INSERIMENTO AVATAR E POPUP FRANCESCO!-->
+        <input title="Francesco D'Angelo" class="francesco-image" type="image" src="../image/avatar2.png" name="image" onclick="openFrancescoPopup()">
+        <div class="francesco-popup" id="myfrancescopopup">
+            <form class="francesco-container">
+                <h3>Francesco D'Angelo:</h3>
+                <h3>Studente frequentante il terzo anno della Parthenope corso di laurea in informatica</h3>
+            </form>
+            <button type="button" class="ok_button_francesco" onclick="closeFrancescoPopup()">Ok</button>
+        </div>
 </body>
 </html>

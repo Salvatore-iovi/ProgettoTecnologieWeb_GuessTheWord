@@ -57,6 +57,7 @@ body{
     padding: 1em;
 }
 .form-container {
+    text-align: center;
     font-family: cursive;
     font-size: small;
     font-weight: bold;
@@ -65,12 +66,14 @@ body{
     background-color: snow;
     border-radius: 130px;
     box-shadow: 5px  5px 1px black;
+    opacity: 0.8;
+    cursor: pointer;
 }
 .lente_suggerimenti{
     position: absolute;
     height: 30px;
     width: 30px;
-    margin-left: -20px;
+    margin-left: -10px;
     margin-top: -20px;
 }
 
@@ -107,9 +110,10 @@ body{
     font-size: small;
     border-radius: 8px;
     position: absolute;
-    margin-left: -20px;
+    margin-left: -10px;
     bottom: -35px;
     box-shadow: 5px  5px 1px black;
+    cursor: pointer;
 }
 .home_popup{
     display: none;
@@ -128,6 +132,8 @@ body{
     background-color: snow;
     border-radius: 130px;
     box-shadow: 5px  5px 1px black;
+    opacity: 0.8;
+    cursor: pointer;
 }
 .image_warning_home{
     position: absolute;
@@ -189,6 +195,8 @@ body{
     background-color: snow;
     border-radius: 130px;
     box-shadow: 5px  5px 1px black;
+    opacity: 0.8;
+    cursor: pointer;
 }
 .image_warning_ricomincia{
     position: absolute;
@@ -231,4 +239,7 @@ body{
     border-radius: 8px;
     background-color: red;
     cursor: pointer;
+}
+.ricomincia_container:hover,.home_container:hover,.form-container:hover{
+    opacity: 1;
 }

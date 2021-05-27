@@ -24,8 +24,103 @@ body{
     font-family: cursive;
     font-size: medium;
     margin-left: 600px;
+    box-shadow: 5px  5px 1px black;
+    background-color: grey;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.tabella table:hover{
+    opacity: 1;
 }
 .tabella td,th{
     border: 3px solid black;
     padding: 8px;
+}
+.salvatore-popup{
+    display: none;
+    position: fixed;
+    bottom: 450px;
+    right: 200px;
+    z-index: 9;
+}
+.salvatore-image{
+    margin-left: 480px;
+    display: flex;
+    position: absolute;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.salvatore-container{
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    max-width: 300px;
+    padding: 10px;
+    background-color: snow;
+    border-radius: 130px;
+    box-shadow: 5px  5px 1px black;
+    position: fixed;
+    top: 420px;
+    left: 360px;
+}
+.ok_button{
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: snow;
+    position: fixed;
+    top: 580px;
+    left: 415px;
+    width: 200px;
+    cursor: pointer;
+}
+.ok_button:hover{
+    background-color: #04AA6D;
+}
+.francesco-popup{
+    display: none;
+    position: fixed;
+    bottom: 450px;
+    right: 200px;
+    z-index: 9;
+}
+.francesco-image{
+    margin-left: 950px;
+    display: flex;
+    position: absolute;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.francesco-container{
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    max-width: 300px;
+    padding: 10px;
+    background-color: snow;
+    border-radius: 130px;
+    box-shadow: 5px  5px 1px black;
+    position: fixed;
+    top: 420px;
+    left: 830px;
+}
+.ok_button_francesco{
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: snow;
+    position: fixed;
+    top: 580px;
+    left: 890px;
+    width: 200px;
+    cursor: pointer;
+}
+.ok_button_francesco:hover{
+    background-color: darkred;
 }

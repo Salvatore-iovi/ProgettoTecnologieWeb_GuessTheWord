@@ -65,6 +65,8 @@ body{
     background-color: snow;
     border-radius: 130px;
     box-shadow: 5px  5px 1px black;
+    opacity: 0.8;
+    cursor: pointer;
 }
 .lente_suggerimenti{
     position: absolute;
@@ -109,6 +111,7 @@ body{
     margin-left: 48px;
     bottom: -35px;
     box-shadow: 5px  5px 1px black;
+    cursor: pointer;
 }
 .home_popup{
     display: none;
@@ -127,6 +130,8 @@ body{
     background-color: snow;
     border-radius: 130px;
     box-shadow: 5px  5px 1px black;
+    opacity: 0.8;
+    cursor: pointer;
 }
 .image_warning_home{
     position: absolute;
@@ -188,6 +193,8 @@ body{
     background-color: snow;
     border-radius: 130px;
     box-shadow: 5px  5px 1px black;
+    opacity: 0.8;
+    cursor: pointer;
 }
 .image_warning_ricomincia{
     position: absolute;
@@ -230,4 +237,7 @@ body{
     border-radius: 8px;
     background-color: red;
     cursor: pointer;
+}
+.ricomincia_container:hover,.home_container:hover,.form-container:hover{
+    opacity: 1;
 }
