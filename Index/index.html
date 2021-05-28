@@ -7,6 +7,8 @@
     <title>Guess The Word</title>
 </head>
 <body>
+<script src="../Nomeutente.js">
+</script>
 <!--NAVBAR!-->
 <div class="navbar">
        <img class="image" width="60px" height="60px" src="../image/logo.png">
@@ -42,10 +44,27 @@
 </div>
 <div class="start">
     <p>
-    <input type="button" value="Start" onclick=location.href="../Liv1/Livello1.html">
+    <input type="button" value="Start" onclick="openUsernamePopup()">
     </p>
 </div>
+<!--INSERIMENTO USERNAME!-->
+<div class="username_popup" id="myusernamepopup">
+    <form class="username_container">
+        <img class="username_image" src="../image/username.png">
+        <h3>Username</h3>
+        <h3>Inserire l'username prego:</h3>
+        <input id="username" type="text" size="20" maxlength="20">
+        <button type="button" class="ok_button_username" onclick="pressOkUsername()">Ok</button>
+        <button type="button" class="cancel_button_username" onclick="closeUsernamePopup()">Cancel</button>
+    </form>
+</div>
+<!--RECUPERO USERNAME!-->
+    <script>
+        if(typeof(Storage)!="undefined")
+        {
 
+        }
+    </script>
 </body>
 </html>
 

@@ -8,6 +8,7 @@
 </head>
 <body>
 <script src="Liv1.js"></script>
+<script src="../Nomeutente.js"></script>
 
     <div class="titolo" id="titolo" title="Verde: Difficoltà Facile" style="cursor: progress">
       <h2>Livello 1</h2>
@@ -65,6 +66,21 @@
             </form>
         </div>
     </div>
+        <!--NOME UTENTE!-->
+        <input title="Username" class="nomeutente" type="image" src="../image/username_avatar.png">
+        <script>
+        </script>
+        <div class="nomeutente_popup" id="mynomeutentepopup">
+            <form class="nomeutente_container">
+                <button type="button" class="ok_button_nomeutente">Ok</button>
+            </form>
+        </div>
+        <!--CATTURA DELL'USERNAME!-->
+    <div id="username">
+    </div>
+    <script>
+        document.getElementById("username").innerHTML=localStorage.getItem("username")
+    </script>
         <!--FORM PER INSERIRE IL TESTO!-->
         <div class="text-area">
             <input  id="risposta_utente" type="text" size="45" maxlength="45">

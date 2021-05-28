@@ -80,11 +80,6 @@ body {
     -webkit-transform: rotate(270deg);
 
 }
-/*freccia-start1.slide-right{
-    animation: slide-right 10s;
-    margin-right: 0%;
-
-}*/
 .freccia-start2{
     position: absolute;
     left: 725px;
@@ -124,11 +119,74 @@ body {
 .start p{
     text-align: center;
 }
-/*@keyframes slide-right{
-    from{
-        margin-right: 100%;
-    }
-    to{
-    margin-right: 0%;
+.username_popup{
+    display: none;
+    position: absolute;
+    bottom: 280px;
+    left: 560px;
 }
-}*/
+.username_container{
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    max-width: 500px;
+    width: 350px;
+    padding: 10px;
+    background-color: snow;
+    border-radius: 130px;
+    box-shadow: 5px  5px 1px black;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+.ok_button_username{
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #04AA6D;
+    cursor: pointer;
+    position: absolute;
+    bottom: -20px;
+    left: 140px;
+}
+.cancel_button_username{
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: red;
+    cursor: pointer;
+    position: absolute;
+    bottom: -20px;
+    left: 190px;
+}
+#username{
+   text-align: center;
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.username_container:hover{
+    opacity: 1;
+}
+.username_image{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin-left: -80px;
+    margin-top: 10px;
+}
