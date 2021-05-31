@@ -45,7 +45,7 @@
         </div>
 
         <!--TASTO SUGGERIMENTI!-->
-        <input title="Suggerimenti" class="suggerimenti" type="image" src="../image/suggerimenti.png" name="image" onclick="openSuggerimenti()">
+        <input title="Suggerimenti" class="suggerimenti" id="suggerimenti" type="image" src="../image/suggerimenti.png" name="image" onclick="openSuggerimenti()">
         <div class="form-popup" id="myForm">
             <form  class="form-container">
                 <img src="../image/lente_suggerimenti.png" class="lente_suggerimenti">
@@ -66,25 +66,38 @@
             </form>
         </div>
     </div>
-        <!--NOME UTENTE!-->
-        <input title="Username" class="nomeutente" type="image" src="../image/username_avatar.png">
-        <script>
-        </script>
-        <div class="nomeutente_popup" id="mynomeutentepopup">
-            <form class="nomeutente_container">
-                <button type="button" class="ok_button_nomeutente">Ok</button>
-            </form>
-        </div>
         <!--CATTURA DELL'USERNAME!-->
-    <div id="username">
+    <div id="username_container">
     </div>
+    <img id="image_user" src="../image/username_avatar.png" height="24px" width="24px">
     <script>
-        document.getElementById("username").innerHTML=localStorage.getItem("username")
+        document.getElementById("username_container").innerHTML=localStorage.getItem("username")
     </script>
+        <!--PUNTEGGIO-->
+    <div id="punti_container">
+    <script>
+        var punti = 0 /*variabile per i punteggi iniziali del gioco*/
+        localStorage.setItem("punteggio", punti)
+        document.getElementById("punti_container").innerHTML = punti
+    </script>
+    </div>
+    <img id="image_punti" src="../image/trofeo.png" height="24px" width="24px">
+    <!--COINS!-->
+    <div id="monete_gioco">
+    <script>
+        var monete=100
+        localStorage.setItem("coins",monete)
+        document.getElementById("monete_gioco").innerHTML=monete
+    </script>
+    </div>
+    <img id="image_monete" src="../image/coins.png" height="24px" width="24px">
         <!--FORM PER INSERIRE IL TESTO!-->
         <div class="text-area">
             <input  id="risposta_utente" type="text" size="45" maxlength="45">
             <div class="invio">
+
+
+
                 <!--BOTTONE PER INVIARE LA RISPOSTA SCRITTA DALL'UTENTE!-->
                 <input  type="button" value="Invia" value="risposta_utente"  onclick="controlloRisposta()">
             </div>

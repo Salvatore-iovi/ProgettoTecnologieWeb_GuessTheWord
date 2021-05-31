@@ -241,3 +241,66 @@ body{
 .ricomincia_container:hover,.home_container:hover,.form-container:hover{
     opacity: 1;
 }
+#username_container{
+    position: absolute;
+    left: 400px;
+    top: 50px;
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    width: 150px;
+    height: 15px;
+    padding: 10px;
+    background-color: snow;
+    border-radius: 130px;
+    cursor: pointer;
+    box-shadow: 3px  3px 1px black;
+}
+#punti_container{
+    position: absolute;
+    left: 950px;
+    top: 50px;
+    text-align: right;
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    width: 80px;
+    height: 15px;
+    padding: 10px;
+    background-color: snow;
+    border-radius: 130px;
+    cursor: pointer;
+    box-shadow: 3px  3px 1px black;
+}
+#image_user{
+    position: absolute;
+    left: 420px;
+    top: 55px;
+}
+#image_punti{
+    position: absolute;
+    left: 960px;
+    top: 55px;
+}
+#monete_gioco{
+    position: absolute;
+    left: 1390px;
+    bottom: 280px;
+    text-align: right;
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    width: 80px;
+    height: 15px;
+    padding: 10px;
+    background-color: snow;
+    border-radius: 130px;
+    cursor: pointer;
+    box-shadow: 3px  3px 1px black;
+}
+#image_monete{
+    position: absolute;
+    left: 1405px;
+    bottom: 285px;
+}
