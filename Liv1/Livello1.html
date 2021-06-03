@@ -45,7 +45,7 @@
         </div>
 
         <!--TASTO SUGGERIMENTI!-->
-        <input title="Suggerimenti" class="suggerimenti" id="suggerimenti" type="image" src="../image/suggerimenti.png" name="image" onclick="openSuggerimenti()">
+        <input title="Suggerimenti: 50 coins" class="suggerimenti" id="suggerimenti" type="image" src="../image/suggerimenti.png" name="image" onclick="openSuggerimenti()">
         <div class="form-popup" id="myForm">
             <form  class="form-container">
                 <img src="../image/lente_suggerimenti.png" class="lente_suggerimenti">
@@ -54,6 +54,17 @@
                 <button type="button" class="cancel" onclick="closeSuggerimenti()">Close</button>
             </form>
         </div>
+        <!--POPUP SUGGERIMENTI INSUFFICIENTI!-->
+        <input class="suggerimenti_insufficienti" id="nosuggerimenti" type="hidden" onclick="openNoSuggerimenti()">
+        <div class="no_suggerimenti_popup" id="mynosuggerimenti" >
+            <form class="no_suggerimenti_container">
+                <img src="../image/warning.png" class="no_suggerimenti">
+                <h3>Attenzione:</h3>
+                <h3>non hai abbastanza monete per poter utilizzare i suggerimenti</h3>
+                <button type="button" class="ok_button_nosuggerimenti" onclick="closeNoSuggerimenti()">Ok</button>
+            </form>
+        </div>
+
         <!--RICOMINCIA!-->
         <input title="Ricomincia" class="ricomincia" type="image" src="../image/ricomincia.png" name="image" onclick="openRicomincia()">
         <div class="ricomincia_popup" id="myricominciapopup">
@@ -65,7 +76,38 @@
                 <button type="button" class="cancel_button_ricomincia" onclick="closeRicomincia()">Cancel</button>
             </form>
         </div>
+        <!--RIMUOVI LETTERE-->
+        <input title="Rimuovi Lettera" class="rimuovi_lettera" type="image" src="../image/rimuovi_lettera.png" name="image" onclick="openRimuoviLettera()">
+        <div class="rimuovilettera_popup" id="myrimuoviletterapopup">
+            <form class="rimuovilettera_container">
+                <img src="../image/warning.png" class="image_warning_rimuovilettera">
+                <h3>Rimuovi Lettera</h3>
+                <h3>Facendo in questo modo eliminerai le lettere che non fanno parte della parola</h3>
+                <button type="button" class="ok_button_ricomincia" onclick="pressOkRimuoviLettera()">Ok</button>
+                <button type="button" class="cancel_button_ricomincia" onclick="closeRimuoviLettera()">Cancel</button>
+            </form>
+        </div>
     </div>
+        <!--POP UP RISPOSTA ESATTA!-->
+        <input class="risposta_esatta" id="rispostaeatta" type="hidden" onclick="openRispostaEsatta()">
+        <div class="rispostaesatta_popup" id="myrispostaesatta">
+            <form class="rispostaesatta_container">
+                <img src="../image/risposta_esatta.png" class="image_risposta_esatta">
+                <h3>Complimenti</h3>
+                <h2>Risposta esatta</h2>
+                <button type="button" class="ok_button_rispostaesatta" onclick="closeRispostaEsatta()">Ok</button>
+            </form>
+        </div>
+        <!--POP UP RISPOSTA SBAGLIATA+TENTATIVI!-->
+        <input class="risposta_errata" id="rispostaerrata" type="hidden" onclick="openRispostaErrata()">
+        <div class="rispostaerrata_popup" id="myrispostaerrata">
+            <form class="rispostaerrata_container">
+                <img src="../image/risposta_errata.png" class="image_risposta_errata">
+                <h3>Attenzione:</h3>
+                <h3 >la parola inserita è errata...ti restano<script>document.write(<!--DA FARE1-->)</script> tentativi</h3>
+                <button type="button" class="ok_button_rispostaerrata" onclick="closeRispostaErrata()">Ok</button>
+            </form>
+        </div>
         <!--CATTURA DELL'USERNAME!-->
     <div id="username_container">
     </div>
@@ -91,15 +133,87 @@
     </script>
     </div>
     <img id="image_monete" src="../image/coins.png" height="24px" width="24px">
+
+<!--CONTENITORE LETTERE-->
+<div id="lettere_container">
+    <h2>LETTERE-COMPI-PAROLA</h2>
+    <div class="riga_lettere">
+        <div class="colonna_lettera">
+            <input class="button_lettera1" type="button" value="A">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera1" type="button" value="G">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera1" type="button" value="V">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera1" type="button" value="Z">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera1" type="button" value="I">
+        </div>
+    </div>
+    <div class="riga_lettere">
+        <div class="colonna_lettera">
+            <input class="button_lettera2" type="button" value="O">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera2" type="button" value="Y">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera2" type="button" value="R">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera2" type="button" value="N">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera2" type="button" value="E">
+        </div>
+    </div>
+    <div class="riga_lettere">
+        <div class="colonna_lettera">
+            <input class="button_lettera3" type="button" value="S">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera3" type="button" value="T">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera3" type="button" value="I">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera3" type="button" value="D">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera3" type="button" value="T">
+        </div>
+    </div>
+    <div class="riga_lettere">
+        <div class="colonna_lettera">
+            <input class="button_lettera4" type="button" value="G">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera4" type="button" value="B">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera4" type="button" value="E">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera4" type="button" value="A">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera4" type="button" value="L">
+        </div>
+    </div>
+</div>
+
         <!--FORM PER INSERIRE IL TESTO!-->
         <div class="text-area">
             <input  id="risposta_utente" type="text" size="45" maxlength="45">
             <div class="invio">
 
-
-
                 <!--BOTTONE PER INVIARE LA RISPOSTA SCRITTA DALL'UTENTE!-->
-                <input  type="button" value="Invia" value="risposta_utente"  onclick="controlloRisposta()">
+                <input  type="button" value="Invia"  onclick="controlloRisposta()">
             </div>
         </div>
 
