@@ -1,5 +1,4 @@
 var cont=0 //variabile per verificare se si usano i suggerimenti
-var error=false
 var tentativi=3
 function controlloRisposta()
 {
@@ -8,47 +7,35 @@ function controlloRisposta()
     let displayValue=display.value
     if(displayValue.toLowerCase()===risposta_esatta)
     {
-        openRispostaEsatta()
+        alert("Risposta esatta")
         assegnaPunteggio()
         assegnaMonete()
-        document.getElementById("monete_gioco").innerHTML=monete
-    }else if(displayValue==' ' || displayValue=="")
-        {
-            alert("inserire almeno un carattere")
-            display.value=""
-        }
-        else{
-            tentativi--
-            recuperaTentativi(tentativi)
-            openRispostaErrata()
-            display.value=""
-        }
+        location.href="http://localhost:63342/GuessTheWord/Liv2/Livello2.html?_ijt=n2anun9vr4ue7j1g0vomjdtnf9"
+    }else{
+        tentativi--
+        alert("Risposta errata...Ti restano: " +tentativi+ " tentativi")
+        display.value=""
+
     if(tentativi==0)
     {
-        var risposta=confirm("Hai perso...vuoi ricominciare la partita?")
-        if(risposta==true)
-        {
-            location.href="http://localhost:63342/GuessTheWord/Liv1/Livello1.html?_ijt=1u1d0gkge0ttvf1l4j6flf4mvg"
-        }
-        else{
-            location.href="http://localhost:63342/GuessTheWord/Index/index.html?_ijt=c6apgdbbfq3podof7b2sd7khu7"
-        }
+        alert("Hai perso")
+        location.href="http://localhost:63342/GuessTheWord/Index/index.html?_ijt=67i1nsgsb6dook9fnd981spm60"
+    }
     }
 }
 function openSuggerimenti()
 {
     cont=1
-    if(monete>=50)
+    monete = monete - 50
+    localStorage.setItem("coins",monete)
+    document.getElementById("monete_gioco").innerHTML=monete
+    if(monete==0)
     {
-        monete = monete - 50
-        document.getElementById("myForm").style.display="block"
-        localStorage.setItem("coins",monete)
-        document.getElementById("monete_gioco").innerHTML=monete
+        document.getElementById("suggerimenti").disabled=true
+        alert("Non hai abbastanza monete per poter utilizzare i suggerimenti")
     }
-    else if(monete<50)
-    {
-        openNoSuggerimenti()
-    }
+
+    document.getElementById("myForm").style.display="block"
 }
 function closeSuggerimenti()
 {
@@ -90,6 +77,20 @@ function assegnaPunteggio()
         document.getElementById("punti_container").innerHTML = localStorage.getItem("punteggio")
     }
 }
+function utilizzaMonete()
+{
+        if(cont==1)
+        {
+            monete=monete-50
+            localStorage.setItem("coins",monete)
+            document.getElementById("monete_gico").innerHTML=localStorage.getItem(monete)
+        }
+    if(monete==0)
+    {
+        alert("Non hai abbastanza monete per poter utilizzare il suggerimento")
+    }
+
+}
 function assegnaMonete()
 {
     if(cont == 1){
@@ -102,43 +103,4 @@ function assegnaMonete()
         document.getElementById("monete_gioco").innerHTML = localStorage.getItem("monete")
     }
 
-}
-function openRimuoviLettera(){
-    document.getElementById("myrimuoviletterapopup").style.display="block"
-}
-function closeRimuoviLettera(){
-    document.getElementById("myrimuoviletterapopup").style.display="none"
-}
-function pressOkRimuoviLettera()
-{
-    document.getElementById("").disabled=true//DA CONTINUARE
-}
-function openNoSuggerimenti()
-{
-    document.getElementById("mynosuggerimenti").style.display="block"
-}
-function closeNoSuggerimenti()
-{
-    document.getElementById("mynosuggerimenti").style.display="none"
-}
-function openRispostaEsatta()
-{
-    document.getElementById("myrispostaesatta").style.display="block"
-}
-function closeRispostaEsatta()
-{
-    document.getElementById("myrispostaesatta").style.display="none"
-    location.href="http://localhost:63342/GuessTheWord/Liv2/Livello2.html?_ijt=n2anun9vr4ue7j1g0vomjdtnf9"
-}
-function openRispostaErrata()
-{
-    document.getElementById("myrispostaerrata").style.display="block"
-}
-function closeRispostaErrata()
-{
-    document.getElementById("myrispostaerrata").style.display="none"
-}
-function recuperaTentativi(valore)
-{
-    return valore
 }
