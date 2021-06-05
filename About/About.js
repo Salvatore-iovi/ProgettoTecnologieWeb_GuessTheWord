@@ -14,3 +14,15 @@ function closeFrancescoPopup()
 {
     document.getElementById("myfrancescopopup").style.display="none";
 }
+function openHomeAbout()
+{
+    document.getElementById("myhomeaboutpopup").style.display="block";
+}
+function closeHomeAbout()
+{
+    document.getElementById("myhomeaboutpopup").style.display="none";
+}
+function pressOkAbout()
+{
+    location.href="http://localhost:63342/GuessTheWord/Index/index.html?_ijt=t8uee5vhklhjgonc728ekc64gs"
+}

@@ -124,3 +124,59 @@ body{
 .ok_button_francesco:hover{
     background-color: darkred;
 }
+.Home_about{
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 70px;
+    position: absolute;
+    bottom: 500px;
+}
+.home_about_popup{
+    display: none;
+    position: fixed;
+    bottom: 450px;
+    right: 130px;
+    z-index: 9;
+}
+.home_about_container{
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    max-width: 300px;
+    padding: 10px;
+    background-color: snow;
+    border-radius: 130px;
+    box-shadow: 5px  5px 1px black;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.ok_about_button{
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #04AA6D;
+    cursor: pointer;
+}
+.cancel_about_button{
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: red;
+    cursor: pointer;
+}
+.image_warning_home_about{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin-left: -80px;
+    margin-top: 10px;
+}
+.home_about_container:hover{
+    opacity: 1;
+}

@@ -97,13 +97,13 @@
                 <button type="button" class="ok_button_rispostaesatta" onclick="closeRispostaEsatta()">Ok</button>
             </form>
         </div>
-        <!--POP UP RISPOSTA SBAGLIATA+TENTATIVI!-->
+        <!--POP UP RISPOSTA SBAGLIATA-->
         <input class="risposta_errata" id="rispostaerrata" type="hidden" onclick="openRispostaErrata()">
         <div class="rispostaerrata_popup" id="myrispostaerrata">
             <form class="rispostaerrata_container">
                 <img src="../image/risposta_errata.png" class="image_risposta_errata">
                 <h3>Attenzione:</h3>
-                <h3 >la parola inserita è errata...ti restano tentativi</h3>
+                <h3 >la parola inserita è errata</h3>
                 <button type="button" class="ok_button_rispostaerrata" onclick="closeRispostaErrata()">Ok</button>
             </form>
         </div>
@@ -154,6 +154,14 @@
     </div>
     <img id="image_monete" src="../image/coins.png" height="24px" width="24px">
 
+    <!--TENTATIVI!-->
+    <div id="tentativi_container">
+    <script>
+        localStorage.setItem("possibilita",tentativi)
+        document.getElementById("tentativi_container").innerHTML=tentativi
+    </script>
+    </div>
+    <img src="../image/tentativi.png" id="image_tentativi">
 <!--CONTENITORE LETTERE-->
 <div id="lettere_container">
     <h2>LETTERE-COMPI-PAROLA</h2>
@@ -226,15 +234,6 @@
         </div>
     </div>
 </div>
- <!--DIV TENTATIVI!-->
-<div id="tentativi_container">
-</div>
-<img src="../image/tentativi.png" id="image_tentativi">
-     <script>
-         var tentativi=3
-         localStorage.setItem("possibilita",tentativi)
-         document.getElementById("tentativi_container").innerHTML=tentativi
-     </script>
         <!--FORM PER INSERIRE IL TESTO!-->
         <div class="text-area">
             <input  id="risposta_utente" type="text" size="45" maxlength="45">

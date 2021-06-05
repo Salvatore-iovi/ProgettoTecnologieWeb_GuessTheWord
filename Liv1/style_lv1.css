@@ -239,7 +239,7 @@ body{
     cursor: pointer;
 }
 .ricomincia_container:hover,.home_container:hover,.form-container:hover,.rimuovilettera_container:hover,.no_suggerimenti_container:hover,
-.rispostaesatta_container:hover,.rispostaerrata_container:hover,.caratterimancanti_container:hover,.partitapersa_container:hover{
+.rispostaesatta_container:hover,.rispostaerrata_container:hover,.caratterimancanti_container:hover{
     opacity: 1;
 }
 #username_container{
@@ -580,7 +580,6 @@ body{
     padding: 10px;
     background-color: snow;
     border-radius: 8px;
-    opacity: 0.8;
     cursor: pointer;
 }
 .image_partitapersa{
