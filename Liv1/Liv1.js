@@ -11,15 +11,14 @@ function controlloRisposta() {
         assegnaPunteggio()
         assegnaMonete()
         document.getElementById("monete_gioco").innerHTML = monete
-    }if(displayValue!==risposta_esatta)/*DA VEDERE*/
+    }/*if(displayValue!==risposta_esatta)DA VEDERE
     {
         tentativi--
         localStorage.setItem("tentativo",tentativi)
         openRispostaErrata()
-        document.getElementById(/*da vedere*/).innerHTML=localStorage.getItem("tentativo")
+        document.getElementById(da vedere).innerHTML=localStorage.getItem("tentativo")
         displayValue=""
-
-    }
+    }*/
      if (displayValue == ' ' || displayValue == "") {
         openCaratteriMancanti()
         display.value = ""
