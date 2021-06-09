@@ -9,11 +9,11 @@ function controlloRisposta() {
         assegnaPunteggio()
         assegnaMonete()
         document.getElementById("monete_gioco").innerHTML = monete
-    }if(displayValue!==risposta_esatta && displayValue!==""&& displayValue!=='')
+    }if(displayValue!==risposta_esatta && displayValue!==""&& displayValue!==' ')
     {
+        openRispostaErrata()
         tentativi--
         localStorage.setItem("possibilita",tentativi)
-        openRispostaErrata()
         document.getElementById("tentativi_container").innerHTML=tentativi
         display.value=""
     }
