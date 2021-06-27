@@ -27,8 +27,10 @@ function controlloRisposta() {
      }
 }
 function openSuggerimenti() {
-    cont = 1
-
+    closeHome()
+    closeRicomincia()
+    closeRimuoviLettera()
+        cont = 1
     if (monete >= 50) {
         monete = monete - 50
         document.getElementById("myForm").style.display = "block"
@@ -47,6 +49,9 @@ function openSuggerimenti() {
     }
 
     function openHome() {
+        closeSuggerimenti()
+        closeRicomincia()
+        closeRimuoviLettera()
         document.getElementById("myhomepopup").style.display = "block"
     }
 
@@ -55,6 +60,9 @@ function openSuggerimenti() {
     }
 
     function openRicomincia() {
+        closeHome()
+        closeSuggerimenti()
+        closeRimuoviLettera()
         document.getElementById("myricominciapopup").style.display = "block"
     }
 
@@ -100,6 +108,9 @@ function openSuggerimenti() {
         }
     }
     function openRimuoviLettera() {
+        closeHome()
+        closeSuggerimenti()
+        closeRicomincia()
         document.getElementById("myrimuoviletterapopup").style.display = "block"
     }
     function closeRimuoviLettera() {
@@ -147,3 +158,35 @@ function openSuggerimenti() {
     {
         location.href = "http://localhost:63342/GuessTheWord/Index/index.html?_ijt=c6apgdbbfq3podof7b2sd7khu7"
     }
+    //ZOOM IMMAGINI
+function zoomImmagine1()
+{
+    $('img').on('click', function(e) {
+        $('#imgViewer1').html('').append( $(e.currentTarget).clone().removeClass('img-responsive').removeClass('img-thumbnail') )
+        $('#viewImg1').modal('show')
+    })
+}
+function zoomImmagine2(){
+    $('img').on('click', function(e) {
+        $('#imgViewer2').html('').append( $(e.currentTarget).clone().removeClass('img-responsive').removeClass('img-thumbnail') )
+        $('#viewImg2').modal('show')
+    })
+}
+function zoomImmagine3()
+{
+    $('img').on('click', function(e) {
+        $('#imgViewer3').html('').append( $(e.currentTarget).clone().removeClass('img-responsive').removeClass('img-thumbnail') )
+        $('#viewImg3').modal('show')
+    })
+}
+
+function zoomImmagine4()
+{
+    $('img').on('click', function(e) {
+        $('#imgViewer4').html('').append( $(e.currentTarget).clone().removeClass('img-responsive').removeClass('img-thumbnail') )
+        $('#viewImg4').modal('show')
+    })
+}
+$('img').each(function(i,e) {
+    $(e).wrap('<div class="img-wrapper"></div>')
+})

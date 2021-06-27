@@ -22,6 +22,9 @@ body {
     font-size: medium;
     text-decoration: none;
 }
+.navbar-expand-lg{
+    border-radius: 50px;
+}
 .text-lg{
     text-align: center;
     font-size: 100px;/*imposta una grandezza del font*/
@@ -96,8 +99,8 @@ body {
 }
 .username_popup{
     display: none;
-    position: relative;
-    bottom: 280px;
+    position: absolute;
+    bottom: 220px;
     left: 560px;
 }
 .username_container{
@@ -107,6 +110,7 @@ body {
     font-weight: bold;
     max-width: 500px;
     width: 350px;
+    height: 150px;
     padding: 10px;
     background-color: snow;
     border-radius: 130px;
@@ -126,24 +130,29 @@ body {
     width: 280px;
 }
 .btn-secondary#okusername{
+    text-align: center;
     font-family: cursive;
-    font-size: small;
+    font-size: smaller;
     font-weight: bold;
     border-radius: 8px;
     background-color: #04AA6D;
     cursor: pointer;
     position: absolute;
+    top: 95px;
+    left: 120px;
+
 }
-btn#okusername {
-    width: 45px;
-}
-.btn-outline-secondary#cancelusername{
+.btn-secondary#cancelusername{
+    text-align: center;
     font-family: cursive;
-    font-size: small;
+    font-size: smaller;
     font-weight: bold;
     border-radius: 8px;
     background-color: red;
     cursor: pointer;
+    position: absolute;
+    top: 95px;
+    left: 170px;
 }
 .username_container h3{
     text-align: center;
@@ -156,4 +165,65 @@ btn#okusername {
     height: 30px;
     position: absolute;
     left: 100px;
+}
+#username{
+    text-align: center;
+    font-size: smaller;
+    font-family: cursive;
+    font-weight: bold;
+}
+.username_error_popup{
+    display: none;
+    position: absolute;
+    top: 180px;
+    left: 560px;
+}
+.username_error_container{
+    text-align: center;
+    position: relative;
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    width: 350px;
+    height: 125px;
+    padding: 10px;
+    background-color: darkgrey;
+    border-radius: 8px;
+    box-shadow: 5px  5px 1px black;
+    cursor: pointer;
+}
+.username_error_container h3{
+    text-align: center;
+    font-family: cursive;
+    font-size: medium;
+    font-weight: bold;
+    color: snow;
+    line-height: 30px;
+}
+.username_error_image{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin-left: -80px;
+ }
+.open-button{
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+.btn-secondary#okusernameerror{
+    text-align: center;
+    font-family: cursive;
+    font-size: smaller;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #04AA6D;
+    cursor: pointer;
 }

@@ -69,7 +69,16 @@
         <h3>Inserisci il tuo username:</h3>
         <input id="username" type="text" size="10" maxlength="10">
         <button type="button" class="btn btn-secondary" id="okusername" onclick="pressOkUsername()">Ok</button>
-        <button type="button" class="btn btn-outline-secondary" id="cancelusername" onclick="closeUsernamePopup()">Cancel</button>
+        <button type="button" class="btn btn-secondary" id="cancelusername" onclick="closeUsernamePopup()">Cancel</button>
+    </form>
+</div>
+<!--INSERIMENTO POP UP INSERIRE UN USERNAME VALIDO!-->
+<div class="username_error_popup" id="myusernameerrorpopup">
+    <form class="username_error_container">
+        <img class="username_error_image" src="../image/warning.png">
+        <h3>Attenzione</h3>
+        <h3>Si prega di inserire un username valido</h3>
+        <button type="button" class="btn btn-secondary" id="okusernameerror" onclick="closeUsernameErrorPopup()">Ok</button>
     </form>
 </div>
 <!--JAVASCRIPT BOOTSTRAP!-->
