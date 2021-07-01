@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <!--INIZIO BOOTSTRAP CSS!-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--FINE BOOTSTRAP CSS-->
+    <title>Guess The Word | IL GIOCO</title>
+  <link rel="stylesheet" href="../static/css/style_lv1.css">
+    <link rel="icon" href="../static/imagini/image/web-icon.png" type="image/png"/>
+</head>
+<body>
+<script src="../static/javascript/Liv1.js"></script>
+<script src="../static/javascript/Nomeutente.js"></script>
+
+    <div class="titolo" id="titolo" title="Verde: Difficoltà Facile" style="cursor: progress">
+      <p class="text-lg">Livello 1</p>
+    </div>
+<!--INSERIMENTO IMMAGINI!-->
+    <div class="schermata_foto">
+<div class="image">
+    <div class="col">
+        <img src="../static/imagini/image_words/Liv1/image1.jpg" class="img-thumbnail" onmouseover="this.width=250;this.height=250;" onmouseout="this.width=200;this.height=200;">
+    </div>
+    <div class="col">
+        <img src="../static/imagini/image_words/Liv1/image2.jpg" class="img-thumbnail" onmouseover="this.width=250;this.height=250;" onmouseout="this.width=200;this.height=200;">
+    </div>
+</div>
+<div class="image">
+    <div class="col">
+        <img src="../static/imagini/image_words/Liv1/image3.jpg" class="img-thumbnail" onmouseover="this.width=250;this.height=250;" onmouseout="this.width=200;this.height=200;">
+    </div>
+    <div class="col">
+        <img src="../static/imagini/image_words/Liv1/image4.jpg" class="img-thumbnail" onmouseover="this.width=250;this.height=250;" onmouseout="this.width=200;this.height=200;">
+    </div>
+</div>
+
+        <!--TASTO HOME!-->
+            <input title="Home" class="Home" type="image" src="../static/imagini/image/freccia-start.png" name="image" onclick="openHome()">
+        <div class="home_popup" id="myhomepopup">
+            <form class="home_container" method="POST">
+                <img src="../static/imagini/image/warning.png" class="image_warning_home">
+                <h3>Attenzione:</h3>
+                <h3>stai per tornare alla home tutti i progressi andranno persi continuare?</h3>
+                <a href="/">
+                <button type="button" class="btn btn-secondary" id="ok_button" onclick="pressOk()">Ok</button>
+                    </a>
+                <button type="button" class="btn btn-secondary" id="cancel_button" onclick="closeHome()">Cancel</button>
+            </form>
+        </div>
+
+        <!--TASTO SUGGERIMENTI!-->
+        <input title="Suggerimenti" class="suggerimenti" id="suggerimenti" type="image" src="../static/imagini/image/suggerimenti.png" name="image" onclick="openSuggerimenti()">
+        <div class="form-popup" id="myForm">
+            <form  class="form-container">
+                <img src="../static/imagini/image/lente_suggerimenti.png" class="lente_suggerimenti">
+                <h3>Suggerimento:</h3>
+                <h3>Indaga sui crimini</h3>
+                <button type="button" class="btn btn-secondary" id="cancel_suggerimenti" onclick="closeSuggerimenti()">Close</button>
+            </form>
+        </div>
+        <!--POPUP SUGGERIMENTI INSUFFICIENTI!-->
+        <input class="suggerimenti_insufficienti" id="nosuggerimenti" type="hidden" onclick="openNoSuggerimenti()">
+        <div class="no_suggerimenti_popup" id="mynosuggerimenti">
+            <form class="no_suggerimenti_container">
+                <img src="../static/imagini/image/warning.png" class="no_suggerimenti">
+                <h3>Attenzione:</h3>
+                <h3>hai raggiunto il limite massimo di suggerimenti possibili</h3>
+                <button type="button" class="btn btn-secondary" id="ok_button_nosuggerimenti" onclick="closeNoSuggerimenti()">Ok</button>
+            </form>
+        </div>
+        <!--RICOMINCIA!-->
+        <input title="Ricomincia" class="ricomincia" type="image" src="../static/imagini/image/ricomincia.png" name="image" onclick="openRicomincia()">
+        <div class="ricomincia_popup" id="myricominciapopup">
+            <form class="ricomincia_container">
+                <img src="../static/imagini/image/warning.png" class="image_warning_ricomincia">
+                <h3>Attenzione:</h3>
+                <h3>vuoi davvero ricominciare?Tutti i progressi andranno persi</h3>
+                <a href="/Livello1">
+                <button type="button" class="btn btn-secondary" id="ok_button_ricomincia" onclick="pressOkRicomincia()">Ok</button>
+                </a>
+                <button type="button" class="btn btn-secondary" id="cancel_button_ricomincia" onclick="closeRicomincia()">Cancel</button>
+            </form>
+        </div>
+        <!--RIMUOVI LETTERE-->
+        <input title="Rimuovi Lettera" class="rimuovi_lettera" type="image" src="../static/imagini/image/rimuovi_lettera.png" name="image" onclick="openRimuoviLettera()">
+        <div class="rimuovilettera_popup" id="myrimuoviletterapopup">
+            <form class="rimuovilettera_container">
+                <img src="../static/imagini/image/warning.png" class="image_warning_rimuovilettera">
+                <h3>Rimuovi Lettera</h3>
+                <h3>Facendo in questo modo eliminerai le lettere che non fanno parte della parola</h3>
+                <button type="button" class="btn btn-secondary" id="ok_button_rimuovi_lettera" onclick="pressOkRimuoviLettera()">Ok</button>
+                <button type="button" class="btn btn-secondary" id="cancel_button_rimuovi_lettera" onclick="closeRimuoviLettera()">Cancel</button>
+            </form>
+        </div>
+    </div>
+        <!--POP UP RISPOSTA ESATTA!-->
+        <input class="risposta_esatta" id="rispostaeatta" type="hidden" onclick="openRispostaEsatta()">
+        <div class="rispostaesatta_popup" id="myrispostaesatta">
+            <form class="rispostaesatta_container" method="POST">
+                <img src="../static/imagini/image/risposta_esatta.png" class="image_risposta_esatta">
+                <h3>Complimenti</h3>
+                <h3>Risposta esatta</h3>
+                <a href="/Livello2">
+                    <button type="button" class="btn btn-secondary" id="ok_button_rispostaesatta" onclick="closeRispostaEsatta()">Ok</button>
+                </a>
+            </form>
+        </div>
+        <!--POP UP RISPOSTA SBAGLIATA-->
+        <input class="risposta_errata" id="rispostaerrata" type="hidden" onclick="openRispostaErrata()">
+        <div class="rispostaerrata_popup" id="myrispostaerrata">
+            <form class="rispostaerrata_container">
+                <img src="../static/imagini/image/risposta_errata.png" class="image_risposta_errata">
+                <h3>Attenzione:</h3>
+                <h3 >la parola inserita è errata</h3>
+                <button type="button" class="btn btn-secondary" id="ok_button_rispostaerrata" onclick="closeRispostaErrata()">Ok</button>
+            </form>
+        </div>
+        <!--POP UP CARATTERI MANCANTI!-->
+        <input class="caratteri_mancanti" id="caratterimancanti" type="hidden" onclick="openCaratteriMancanti()">
+        <div class="caratterimancanti_popup" id="mycaratterimancanti">
+            <form class="caratterimancanti_container">
+                <img src="../static/imagini/image/risposta_errata.png" class="image_caratterimancanti">
+                <h3>Attenzione:</h3>
+                <h3>inserire almeno un carattere</h3>
+                <button type="button" class="btn btn-secondary" id="ok_button_caratterimancanti" onclick="closeCaratteriMancanti()">Ok</button>
+            </form>
+        </div>
+        <!--POP UP PARTITA PERSA!-->
+        <input class="partita_persa" id="partitapersa" type="hidden" onclick="openPartitaPersa()">
+        <div class="partitapersa_popup" id="mypartitapersa">
+            <form class="partitapersa_container">
+                <img src="../static/imagini/image/partita_persa.png" class="image_partitapersa">
+                <h3>Ops...</h3>
+                <h3>Hai perso la partita...vuoi ricominciare?</h3>
+                <a href="/Livello1">
+                <button type="button" class="btn btn-secondary" id="yes_button_partitapersa" onclick="yesPartitaPersa()">Yes</button>
+                </a>
+                <a href="/">
+                <button type="button" class="btn btn-secondary" id="no_button_partitapersa" onclick="noPartitaPersa()">No</button>
+                </a>
+            </form>
+        </div>
+        <!--CATTURA DELL'USERNAME!-->
+    <div id="username_container">
+    </div>
+    <img id="image_user" src="../static/imagini/image/username_avatar.png" height="24px" width="24px">
+    <script>
+        document.getElementById("username_container").innerHTML=localStorage.getItem("username")
+    </script>
+        <!--PUNTEGGIO-->
+    <div id="punti_container">
+    <script>
+        var punti = 0 /*variabile per i punteggi iniziali del gioco*/
+        localStorage.setItem("punteggio", punti)
+        document.getElementById("punti_container").innerHTML = punti
+    </script>
+    </div>
+    <img id="image_punti" src="../static/imagini/image/trofeo.png" height="24px" width="24px">
+    <!--COINS!-->
+    <div id="monete_gioco">
+       <script>
+        var monete=100
+        localStorage.setItem("coins",monete)
+        document.getElementById("monete_gioco").innerHTML=monete
+    </script>
+    </div>
+    <img id="image_monete" src="../static/imagini/image/coins.png" height="24px" width="24px">
+
+    <!--TENTATIVI!-->
+    <div id="tentativi_container">
+    <script>
+        localStorage.setItem("possibilita",tentativi)
+        document.getElementById("tentativi_container").innerHTML=tentativi
+    </script>
+    </div>
+    <img src="../static/imagini/image/tentativi.png" id="image_tentativi">
+<!--CONTENITORE LETTERE-->
+<div id="lettere_container">
+    <h2>LETTERE-COMPI-PAROLA</h2>
+    <div class="riga_lettere">
+        <div class="colonna_lettera">
+            <input class="button_lettera1" type="button" value="A">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera1" type="button" value="G">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera1" type="button" value="V">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera1" type="button" value="Z">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera1" type="button" value="I">
+        </div>
+    </div>
+    <div class="riga_lettere">
+        <div class="colonna_lettera">
+            <input class="button_lettera2" type="button" value="O">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera2" type="button" value="Y">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera2" type="button" value="R">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera2" type="button" value="N">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera2" type="button" value="E">
+        </div>
+    </div>
+    <div class="riga_lettere">
+        <div class="colonna_lettera">
+            <input class="button_lettera3" type="button" value="S">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera3" type="button" value="T">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera3" type="button" value="I">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera3" type="button" value="D">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera3" type="button" value="T">
+        </div>
+    </div>
+    <div class="riga_lettere">
+        <div class="colonna_lettera">
+            <input class="button_lettera4" type="button" value="G">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera4" type="button" value="B">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera4" type="button" value="E">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera4" type="button" value="A">
+        </div>
+        <div class="colonna_lettera">
+            <input class="button_lettera4" type="button" value="L">
+        </div>
+    </div>
+</div>
+        <!--FORM PER INSERIRE IL TESTO!-->
+        <div class="text-area">
+            <input  id="risposta_utente" type="text" size="45" maxlength="45">
+            <div class="invio">
+                <!--BOTTONE PER INVIARE LA RISPOSTA SCRITTA DALL'UTENTE!-->
+                <input  type="button" value="Invia" class="btn-primary" id="invia_button" onclick="controlloRisposta()">
+            </div>
+        </div>
+<!--JAVASCRIPT BOOTSTRAP!-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<!--FINE JAVASCRIPT BOOTSTRAP!-->
+</body>
+</html>

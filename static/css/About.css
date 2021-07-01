@@ -1,0 +1,179 @@
+body{
+    background-color: #acb7ff;
+}
+.container{
+    background-color: white;
+    box-shadow: 5px  5px 1px black;
+    border-radius: 50px;
+}
+.nav-item{
+    text-align: center;
+    font-family: cursive;
+    font-size: large;
+    font-weight: bold;
+}
+.text-lg{
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+    background: linear-gradient(to right,red 20%,#39ff14 50%,blue 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    -webkit-text-stroke: 3px black;/*imposta un bordo del testo*/
+}
+.tabella p{
+    text-align: center;
+    font-family: cursive;
+    font-size: large;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 460px;
+}
+.tabella table{
+    border-collapse: collapse;
+    alignment: center;
+    font-family: cursive;
+    font-size: medium;
+    margin-left: 600px;
+    margin-bottom: 100px;
+    box-shadow: 5px  5px 1px black;
+    background-color: grey;
+    opacity: 0.6;
+    cursor: pointer;
+    position: absolute;
+    top: 250px;
+}
+.tabella table:hover{
+    opacity: 1;
+}
+.tabella td,th{
+    border: 3px solid black;
+    padding: 8px;
+}
+.salvatore-popup{
+    display: none;
+    position: fixed;
+    bottom: 450px;
+    right: 200px;
+    z-index: 9;
+}
+.salvatore-image{
+    margin-left: 480px;
+    display: flex;
+    position: absolute;
+    top: 450px;
+    cursor: pointer;
+}
+.salvatore-container{
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    max-width: 300px;
+    max-height: 150px;
+    padding: 10px;
+    background-color: snow;
+    border-radius: 130px;
+    box-shadow: 5px  5px 1px black;
+    position: fixed;
+    top: 380px;
+    left: 150px;
+    opacity: 0.8;
+}
+.salvatore-container h3{
+    text-align: center;
+    font-family: cursive;
+    font-size: medium;
+    font-weight: bold;
+}
+#ok_button:hover{
+    background-color: darkgreen;
+}
+.francesco-popup{
+    display: none;
+    position: fixed;
+    bottom: 450px;
+    right: 200px;
+    z-index: 9;
+}
+.francesco-image{
+    margin-left: 950px;
+    display: flex;
+    position: absolute;
+    top: 450px;
+    cursor: pointer;
+}
+.francesco-container{
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    max-width: 300px;
+    max-height: 150px;
+    padding: 10px;
+    background-color: snow;
+    border-radius: 130px;
+    box-shadow: 5px  5px 1px black;
+    position: fixed;
+    top: 380px;
+    left: 1050px;
+    opacity: 0.8;
+}
+.francesco-container h3{
+    text-align: center;
+    font-family: cursive;
+    font-size: medium;
+    font-weight: bold;
+}
+#ok_button_francesco:hover{
+    background-color: darkred;
+}
+.francesco-container:hover,.salvatore-container:hover{
+    opacity: 1;
+}
+.salvatore-container#ok_button{
+    text-align: center;
+    font-family: cursive;
+    font-size: smaller;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#ok_button{
+     background-color: #04AA6D;
+ }
+.francesco-container#ok_button_francesco{
+    text-align: center;
+    font-family: cursive;
+    font-size: smaller;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#ok_button_francesco{
+    background-color: red;
+}
+#ok_about_button{
+    text-align: center;
+    font-family: cursive;
+    font-size: smaller;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #04AA6D;
+    cursor: pointer;
+    position: absolute;
+    left: 130px;
+}
+#cancel_about_button{
+    text-align: center;
+    font-family: cursive;
+    font-size: smaller;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: red;
+    cursor: pointer;
+    position: absolute;
+    right: 130px;
+}

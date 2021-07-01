@@ -1,0 +1,230 @@
+body {
+    background-color: #acb7ff;
+}
+#center {
+
+    font-family: cursive;
+    font-size: 18px;
+    background: white;
+    margin: 10px auto;
+    width: 750px;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 10px  10px 5px black;
+
+}
+.container{
+    background-color: white;
+    box-shadow: 5px  5px 1px black;
+    border-radius: 50px;
+}
+.nav-item{
+    text-align: center;
+    font-family: cursive;
+    font-size: large;
+    font-weight: bold;
+}
+.text-lg{
+    text-align: center;
+    font-size: 100px;/*imposta una grandezza del font*/
+    font-family: cursive;
+    background: linear-gradient(to right,red 20%,#39ff14 50%,blue 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    -webkit-text-stroke: 3px black;/*imposta un bordo del testo*/
+}
+.descrizione{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: large;
+    margin: 20px auto;
+    height: 120px;
+    width: 400px;
+    position: absolute;
+    top: 80px;
+}
+.img-fluid#img1{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    left: 730px;
+    bottom: 30px;
+    -webkit-transform: rotate(270deg);
+}
+.img-fluid#img2{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    left: 725px;
+    top: 560px;
+    -webkit-transform: rotate(90deg);
+}
+.img-fluid#img3{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    left: 635px;
+    bottom: 85px;
+    -webkit-transform: rotate(360deg);
+}
+.img-fluid#img4{
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    right: 670px;
+    bottom: 90px;
+    -webkit-transform: rotate(180deg);
+}
+.btn-primary{
+    text-align: center;
+    font-size: medium;
+    font-family: cursive;
+    font-weight: bold;
+    border-radius: 8px;
+    height: 40px;
+    width: 100px;
+    position: absolute;
+    top: 600px;
+    left: 700px;
+    border-color: lightgrey;
+    mso-border-shadow: yes;
+    cursor: pointer;
+    box-shadow: 5px  5px 1px black;
+    background-color: snow;
+    color: black;
+}
+.username_popup{
+    display: none;
+    position: absolute;
+    bottom: 220px;
+    left: 560px;
+}
+.username_container{
+    text-align: center;
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    max-width: 500px;
+    width: 350px;
+    height: 150px;
+    padding: 10px;
+    background-color: snow;
+    border-radius: 130px;
+    box-shadow: 5px  5px 1px black;
+    cursor: pointer;
+}
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+.btn-secondary#okusername{
+    text-align: center;
+    font-family: cursive;
+    font-size: smaller;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #04AA6D;
+    cursor: pointer;
+    position: absolute;
+    top: 95px;
+    left: 120px;
+
+}
+.btn-secondary#cancelusername{
+    text-align: center;
+    font-family: cursive;
+    font-size: smaller;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: red;
+    cursor: pointer;
+    position: absolute;
+    top: 95px;
+    left: 170px;
+}
+.username_container h3{
+    text-align: center;
+    font-family: cursive;
+    font-size: medium;
+    font-weight: bold;
+}
+.username_image{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 100px;
+}
+#username{
+    text-align: center;
+    font-size: smaller;
+    font-family: cursive;
+    font-weight: bold;
+}
+.username_error_popup{
+    display: none;
+    position: absolute;
+    top: 180px;
+    left: 560px;
+}
+.username_error_container{
+    text-align: center;
+    position: relative;
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    width: 350px;
+    height: 125px;
+    padding: 10px;
+    background-color: darkgrey;
+    border-radius: 8px;
+    box-shadow: 5px  5px 1px black;
+    cursor: pointer;
+}
+.username_error_container h3{
+    text-align: center;
+    font-family: cursive;
+    font-size: medium;
+    font-weight: bold;
+    color: snow;
+    line-height: 30px;
+}
+.username_error_image{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin-left: -80px;
+ }
+.open-button{
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+.btn-secondary#okusernameerror{
+    text-align: center;
+    font-family: cursive;
+    font-size: smaller;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #04AA6D;
+    cursor: pointer;
+}
