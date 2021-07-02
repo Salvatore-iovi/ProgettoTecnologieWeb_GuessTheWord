@@ -1,0 +1,4 @@
+                                        LIBRERIE PYTHON UTILIZZATE
+Per la realizzazione del progetto sono state utilizzate le seguenti librerire:
+-pymongo del modulo MongoClient
+-flask dei moduli Flask e render_template
